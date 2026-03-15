@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══════════════════════════════════════════
+       TITLE & META
+       Replace G-XXXXXXXXXX with your GA4 ID
+  ════════════════════════════════════════════ -->
+  <title>Denver Short-Term Rental Property Management | Recommended Provider</title>
+  <meta name="description" content="Highline Management is no longer operating. Denver property owners seeking short-term rental management can connect with a trusted provider offering revenue optimization, guest services, and coordinated property operations." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://highlinedenver.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Denver Short-Term Rental Property Management | Highline Denver" />
+  <meta property="og:description" content="Highline Management is no longer operating. Connect with Effortless Rental Group for professional vacation rental management in Denver." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://highlinedenver.com/" />
+  <meta property="og:image" content="https://highlinedenver.com/highline-hero.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Denver Short-Term Rental Property Management | Highline Denver" />
+  <meta name="twitter:description" content="Highline Management is no longer operating. Connect with Effortless Rental Group for professional vacation rental management in Denver." />
+
+  <!-- ═══════════════════════════════════════════
+       SCHEMA MARKUP
+  ════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://highlinedenver.com/#webpage",
+    "name": "Denver Short-Term Rental Property Management | Recommended Provider",
+    "url": "https://highlinedenver.com/",
+    "description": "Highline Management is no longer operating. Denver property owners can connect with Effortless Rental Group for professional vacation rental management.",
+    "inLanguage": "en-US"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://highlinedenver.com/#organization",
+    "name": "Highline Denver",
+    "description": "Former short-term rental operations provider in Denver, Colorado. No longer operating.",
+    "url": "https://highlinedenver.com/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Denver",
+      "addressRegion": "CO",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is Highline Denver still operating?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Highline Denver is no longer operating as a short-term rental management company."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who should property owners contact for management services?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Property owners seeking professional short-term rental management can contact Effortless Rental Group, an independent company serving the Denver area."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What services does Effortless Rental Group provide?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Effortless Rental Group provides vacation rental management services including revenue optimization, listing management across major booking platforms, guest communication, and coordinated property operations."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- ═══════════════════════════════════════════
+       GA4 — Replace G-XXXXXXXXXX with your Measurement ID
+  ════════════════════════════════════════════ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+
+    /* Referral click tracking — event fires on every CTA click */
+    function trackReferralClick(label) {
+      gtag('event', 'referral_click', {
+        event_label: label
+      });
+    }
+  </script>
+
+  <!-- ═══════════════════════════════════════════
+       FONTS
+  ════════════════════════════════════════════ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Oswald:wght@600;700&display=swap" rel="stylesheet" />
+
+  <!-- ═══════════════════════════════════════════
+       STYLES
+       Brand palette from existing Highline site:
+       - Deep navy #0d1117
+       - Warm gold #c9a96e
+       - White display type
+       - Hero background: replace URL below with your CDN path
+  ════════════════════════════════════════════ -->
+  <style>
+    /* ── VARIABLES ── */
+    :root {
+      --navy:       #0d1117;
+      --navy-mid:   #151c24;
+      --navy-soft:  #1e2a36;
+      --slate:      #8fa3b1;
+      --white:      #ffffff;
+      --off-white:  #f5f4f0;
+      --gold:       #c9a96e;
+      --gold-dark:  #a8854a;
+      --text-body:  #3a3a3a;
+      --text-muted: #6b7280;
+      --border:     #dde1e7;
+
+      --font-display: 'Oswald', 'Impact', sans-serif;
+      --font-body:    'Inter', system-ui, sans-serif;
+
+      --max-w:      900px;
+      --pad-y:      5rem;
+      --pad-x:      1.5rem;
+    }
+
+    /* ── RESET ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--font-body);
+      color: var(--text-body);
+      background: var(--off-white);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+
+    /* ── SKIP LINK ── */
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: 0;
+      background: var(--gold);
+      color: var(--navy);
+      font-weight: 700;
+      padding: .75rem 1.5rem;
+      z-index: 9999;
+      border-radius: 0 0 4px 0;
+      font-size: .9rem;
+    }
+    .skip-link:focus { top: 0; }
+
+    /* ── CONTAINER ── */
+    .container {
+      width: 100%;
+      max-width: var(--max-w);
+      margin-inline: auto;
+      padding-inline: var(--pad-x);
+    }
+
+    /* ══════════════════════════════
+       HERO
+    ══════════════════════════════ */
+    /* ─ Replace the url() below with your hero image path or CDN URL ─ */
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      background-image: url('highline-hero.png');
+      background-size: cover;
+      background-position: center 30%;
+      display: flex;
+      flex-direction: column;
+      color: var(--white);
+      overflow: hidden;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        160deg,
+        rgba(13,17,23,.74) 0%,
+        rgba(13,17,23,.46) 50%,
+        rgba(13,17,23,.66) 100%
+      );
+      z-index: 0;
+    }
+
+    /* ── HERO NAV ── */
+    .hero-nav {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.5rem 1rem;
+    }
+
+    .logo-mark {
+      display: inline-flex;
+      align-items: baseline;
+      gap: .05em;
+      line-height: 1;
+    }
+    .logo-h, .logo-l {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 2.6rem;
+      color: var(--white);
+      letter-spacing: -.04em;
+    }
+    .logo-l { font-size: 2rem; opacity: .88; }
+
+    /* ── HERO BODY ── */
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem 1.5rem 5rem;
+      max-width: 700px;
+    }
+
+    .hero-eyebrow {
+      font-size: .7rem;
+      font-weight: 500;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+
+    .hero-h1 {
+      font-family: var(--font-display);
+      font-size: clamp(3.2rem, 10vw, 6rem);
+      font-weight: 700;
+      line-height: 1.0;
+      letter-spacing: -.02em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 2px 24px rgba(0,0,0,.5);
+    }
+
+    .hero-sub {
+      font-size: 1.05rem;
+      font-weight: 300;
+      letter-spacing: .04em;
+      color: rgba(255,255,255,.85);
+      margin-bottom: 2.5rem;
+      text-transform: uppercase;
+    }
+    .hero-sub strong { font-weight: 600; color: var(--white); }
+
+    /* ── SCROLL HINT ── */
+    .hero-scroll {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      opacity: .6;
+      animation: bounce 2s ease-in-out infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50%       { transform: translateX(-50%) translateY(6px); }
+    }
+
+    /* ══════════════════════════════
+       CTA BUTTON
+    ══════════════════════════════ */
+    .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      font-family: var(--font-body);
+      font-size: .95rem;
+      font-weight: 600;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      padding: 1rem 2rem;
+      border-radius: 4px;
+      transition: background .2s, transform .15s, box-shadow .2s;
+      cursor: pointer;
+      text-align: center;
+      min-height: 52px;
+      line-height: 1.2;
+      box-shadow: 0 4px 18px rgba(201,169,110,.3);
+      white-space: nowrap;
+    }
+    .btn:hover   { background: var(--gold-dark); transform: translateY(-1px); box-shadow: 0 6px 24px rgba(201,169,110,.4); }
+    .btn:active  { transform: translateY(0); }
+    .btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+
+    .btn--hero {
+      align-self: flex-start;
+      font-size: 1rem;
+      padding: 1.1rem 2.2rem;
+    }
+    .btn--large {
+      font-size: 1.05rem;
+      padding: 1.1rem 2.5rem;
+    }
+
+    /* ══════════════════════════════
+       NOTICE BAND
+    ══════════════════════════════ */
+    .notice {
+      background: var(--navy);
+      color: var(--white);
+      padding: 1.5rem 0;
+    }
+    .notice-inner {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .notice-icon { font-size: 1.1rem; color: var(--gold); flex-shrink: 0; margin-top: 2px; }
+    .notice-inner p { font-size: .95rem; line-height: 1.6; color: rgba(255,255,255,.88); }
+    .notice-link { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
+    .notice-link:hover { color: var(--white); }
+
+    /* ══════════════════════════════
+       JUMP NAV
+    ══════════════════════════════ */
+    .jump-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .4rem 1.2rem;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .jump-nav a {
+      font-size: .82rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      letter-spacing: .03em;
+      text-transform: uppercase;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: transparent;
+      transition: color .15s, text-decoration-color .15s;
+    }
+    .jump-nav a:hover { color: var(--navy); text-decoration-color: var(--gold); }
+
+    /* ══════════════════════════════
+       SECTIONS
+    ══════════════════════════════ */
+    .section { padding: var(--pad-y) 0; }
+    .section-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .section--light  { background: var(--off-white); }
+    .section--dark   { background: var(--navy); color: var(--white); }
+    .section--muted  { background: #eef1f4; }
+
+    .section--dark .section-h2   { color: var(--white); }
+    .section--dark .section-body { color: rgba(255,255,255,.82); }
+    .section--dark .list li      { color: rgba(255,255,255,.82); border-left-color: var(--gold); }
+    .section--dark .list li::before { color: var(--gold); }
+
+    /* ── HEADINGS ── */
+    .section-h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.7rem, 4vw, 2.4rem);
+      font-weight: 700;
+      letter-spacing: -.01em;
+      text-transform: uppercase;
+      color: var(--navy);
+      line-height: 1.15;
+      padding-bottom: .5rem;
+      border-bottom: 3px solid var(--gold);
+      align-self: flex-start;
+    }
+
+    /* ── BODY TEXT ── */
+    .section-body {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: inherit;
+      max-width: 70ch;
+    }
+    .section--light .section-body { color: var(--text-body); }
+
+    /* ── FEATURE LIST ── */
+    .list { display: flex; flex-direction: column; gap: .6rem; }
+    .list li {
+      font-size: 1rem;
+      padding-left: 1.4rem;
+      position: relative;
+      line-height: 1.55;
+    }
+    .list li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    /* ── CTA ROW ── */
+    .cta-row { margin-top: .75rem; }
+
+    /* ══════════════════════════════
+       CTA SECTION (parallax band)
+    ══════════════════════════════ */
+    /* ─ Replace url() with your hero image or CDN path ─ */
+    .cta-band {
+      position: relative;
+      background-image: url('highline-hero.png');
+      background-size: cover;
+      background-position: center 60%;
+      background-attachment: fixed;
+      padding: 6rem 0;
+      color: var(--white);
+      overflow: hidden;
+    }
+    .cta-band-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(13,17,23,.78);
+      z-index: 0;
+    }
+    .cta-band-inner {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1.5rem;
+    }
+    .cta-band-h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 5vw, 2.8rem);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: -.01em;
+      line-height: 1.15;
+    }
+    .cta-band-body {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,.82);
+      max-width: 58ch;
+      line-height: 1.7;
+    }
+
+    /* ══════════════════════════════
+       FAQ
+    ══════════════════════════════ */
+    .faq-list { display: flex; flex-direction: column; gap: 1.25rem; }
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1.5rem;
+      background: white;
+    }
+    .faq-q {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--navy);
+      text-transform: uppercase;
+      letter-spacing: .02em;
+      margin-bottom: .6rem;
+    }
+    .faq-a { font-size: .97rem; color: var(--text-muted); line-height: 1.65; }
+
+    /* ══════════════════════════════
+       FOOTER
+    ══════════════════════════════ */
+    .footer {
+      background: var(--navy-mid);
+      color: rgba(255,255,255,.65);
+      padding: 3.5rem 0 2.5rem;
+      border-top: 1px solid rgba(255,255,255,.08);
+    }
+    .footer-inner { display: flex; flex-direction: column; gap: 1.5rem; }
+    .footer-logo .logo-h,
+    .footer-logo .logo-l { font-size: 2rem; opacity: .7; }
+    .footer-name {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: rgba(255,255,255,.85);
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      margin-bottom: .35rem;
+    }
+    .footer-tagline { font-size: .9rem; color: var(--slate); margin-bottom: 1rem; }
+    .footer-note { font-size: .82rem; line-height: 1.6; margin-bottom: .5rem; }
+    .footer-legal { font-size: .78rem; color: rgba(255,255,255,.35); margin-top: .5rem; }
+    .footer-link { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
+    .footer-link:hover { color: white; }
+
+    /* ══════════════════════════════
+       MOBILE STICKY CTA
+    ══════════════════════════════ */
+    .sticky-cta { display: none; }
+    .sticky-cta-btn {
+      display: block;
+      background: var(--gold);
+      color: var(--navy);
+      font-family: var(--font-body);
+      font-size: .95rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 1rem 1.5rem;
+      width: 100%;
+      transition: background .2s;
+      min-height: 56px;
+      cursor: pointer;
+    }
+    .sticky-cta-btn:focus-visible { outline: 3px solid var(--gold-dark); outline-offset: -3px; }
+    .sticky-cta-btn:hover { background: var(--gold-dark); }
+
+    /* ══════════════════════════════
+       RESPONSIVE
+    ══════════════════════════════ */
+    @media (min-width: 640px) {
+      .hero-content { padding: 2rem 3rem 6rem; }
+      .footer-inner { flex-direction: row; align-items: flex-start; gap: 3rem; }
+      .footer-logo  { flex-shrink: 0; padding-top: .25rem; }
+    }
+
+    @media (min-width: 900px) {
+      :root { --pad-y: 7rem; }
+      .hero-content { padding: 2rem 4rem 7rem; max-width: 750px; }
+      .section-inner { gap: 1.5rem; }
+      .btn--hero { align-self: flex-start; }
+    }
+
+    @media (max-width: 639px) {
+      .sticky-cta {
+        display: block;
+        position: fixed;
+        bottom: 0; left: 0; right: 0;
+        z-index: 100;
+        box-shadow: 0 -4px 20px rgba(0,0,0,.25);
+      }
+      .btn--hero {
+        align-self: stretch;
+        text-align: center;
+        white-space: normal;
+      }
+      #faq { padding-bottom: calc(var(--pad-y) + 56px); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+      .cta-band { background-attachment: scroll; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Skip to main content -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ══════════════════════════════
+       HERO
+  ══════════════════════════════ -->
+  <header class="hero" role="banner">
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <nav class="hero-nav" aria-label="Brand">
+      <div class="logo-mark">
+        <span class="logo-h">H</span><span class="logo-l">L</span>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Denver Short-Term Rental Management</p>
+      <h1 class="hero-h1">
+        Short-Term<br>
+        Rental<br>
+        Property<br>
+        Management<br>
+        in Denver
+      </h1>
+      <p class="hero-sub">Property Management <strong>ELEVATED.</strong></p>
+      <a
+        class="btn btn--hero"
+        href="https://effortlessrentalgroup.com/?ref=highline&utm_source=highline&utm_medium=referral&utm_campaign=highline_referral"
+        target="_blank"
+        rel="noopener noreferrer"
+        onclick="trackReferralClick('hero_primary_cta')"
+      >
+        Get a Free Property Revenue Analysis
+      </a>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M12 5v14M5 12l7 7 7-7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════
+       NOTICE BAND
+  ══════════════════════════════ -->
+  <div class="notice" role="status" aria-label="Status notice">
+    <div class="container notice-inner">
+      <div class="notice-icon" aria-hidden="true">ℹ</div>
+      <p>
+        <strong>Highline Management is no longer operating.</strong>
+        Highline previously supported vacation rental operations in the Denver area. As of 2026, Highline has ceased operations.
+        Property owners seeking professional short-term rental management can connect with
+        <a
+          class="notice-link"
+          href="https://effortlessrentalgroup.com/?ref=highline&utm_source=highline&utm_medium=referral&utm_campaign=highline_referral"
+          target="_blank"
+          rel="noopener noreferrer"
+          onclick="trackReferralClick('notice_link')"
+        >Effortless Rental Group</a>
+        — a trusted provider serving Denver and surrounding markets.
+      </p>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════
+       JUMP NAV
+  ══════════════════════════════ -->
+  <nav class="jump-nav container" aria-label="Page sections">
+    <a href="#why-management">Why Professional Management</a>
+    <a href="#why-erg">Why Effortless Rental Group</a>
+    <a href="#is-it-right">Is It Right for You?</a>
+    <a href="#airbnb">Airbnb Management</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ══════════════════════════════
+         WHY PROFESSIONAL MANAGEMENT
+    ══════════════════════════════ -->
+    <section id="why-management" class="section section--light">
+      <div class="container section-inner">
+        <h2 class="section-h2">Why Property Owners Choose Professional STR Management</h2>
+        <p class="section-body">
+          Managing a successful short-term rental involves more than listing a property online.
+          Pricing strategy, guest communication, cleaning coordination, and property readiness
+          all impact occupancy and guest reviews.
+        </p>
+        <p class="section-body">Professional management helps owners:</p>
+        <ul class="list">
+          <li>Optimize nightly pricing and revenue</li>
+          <li>Maintain consistent guest communication</li>
+          <li>Coordinate cleaning and turnovers between stays</li>
+          <li>Manage maintenance and property logistics</li>
+          <li>Maintain strong reviews and guest experiences</li>
+        </ul>
+        <p class="section-body">
+          Many property owners choose professional management to improve performance while
+          reducing the day-to-day responsibilities of hosting.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         WHY EFFORTLESS RENTAL GROUP
+    ══════════════════════════════ -->
+    <section id="why-erg" class="section section--dark">
+      <div class="container section-inner">
+        <h2 class="section-h2">Why We Recommend Effortless Rental Group</h2>
+        <p class="section-body">
+          Based on experience supporting short-term rental operations in the Denver market,
+          Effortless Rental Group stands out for combining revenue optimization, guest services,
+          and coordinated property operations into one structured management system.
+        </p>
+        <p class="section-body">Their services typically include:</p>
+        <ul class="list">
+          <li>Dynamic pricing and revenue optimization</li>
+          <li>Listing management across Airbnb, Vrbo, and major booking platforms</li>
+          <li>Professional guest communication and support</li>
+          <li>Turnover coordination and cleaning management</li>
+          <li>Maintenance oversight and property operations</li>
+          <li>Reporting and performance insights for property owners</li>
+        </ul>
+        <p class="section-body">
+          This integrated approach helps vacation rental owners operate their properties more
+          efficiently while maintaining high guest satisfaction.
+        </p>
+        <div class="cta-row">
+          <a
+            class="btn"
+            href="https://effortlessrentalgroup.com/?ref=highline&utm_source=highline&utm_medium=referral&utm_campaign=highline_referral"
+            target="_blank"
+            rel="noopener noreferrer"
+            onclick="trackReferralClick('why_erg_cta')"
+          >
+            Get a Free Property Revenue Analysis
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         IS IT RIGHT FOR YOU?
+    ══════════════════════════════ -->
+    <section id="is-it-right" class="section section--light">
+      <div class="container section-inner">
+        <h2 class="section-h2">Is Professional STR Management Right for You?</h2>
+        <p class="section-body">Effortless Rental Group typically works with property owners who:</p>
+        <ul class="list">
+          <li>Own a short-term rental property in the Denver area</li>
+          <li>Want to improve occupancy and nightly revenue</li>
+          <li>Prefer a professional team managing guest communication</li>
+          <li>Want reliable systems for turnovers, maintenance, and property readiness</li>
+        </ul>
+        <p class="section-body">
+          If that sounds like what you're looking for, their team can review your property and
+          explain how professional management could support your goals.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         AIRBNB MANAGEMENT
+    ══════════════════════════════ -->
+    <section id="airbnb" class="section section--muted">
+      <div class="container section-inner">
+        <h2 class="section-h2">Airbnb Management in Denver</h2>
+        <p class="section-body">
+          Many Denver property owners list their homes on platforms such as Airbnb and Vrbo to
+          generate short-term rental income.
+        </p>
+        <p class="section-body">
+          Managing these listings successfully requires consistent pricing adjustments, guest
+          communication, cleaning coordination, and operational oversight between stays.
+        </p>
+        <p class="section-body">Professional Airbnb management helps owners:</p>
+        <ul class="list">
+          <li>Optimize listing visibility on booking platforms</li>
+          <li>Adjust pricing dynamically based on demand</li>
+          <li>Maintain fast guest response times</li>
+          <li>Coordinate turnovers and property readiness</li>
+        </ul>
+        <p class="section-body">
+          Effortless Rental Group supports vacation rental owners across the Denver area by
+          managing Airbnb listings and coordinating the operational systems that keep properties
+          performing at their best.
+        </p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         CTA PARALLAX BAND
+    ══════════════════════════════ -->
+    <section class="cta-band" aria-label="Call to action">
+      <div class="cta-band-overlay" aria-hidden="true"></div>
+      <div class="container cta-band-inner">
+        <h2 class="cta-band-h2">Explore Your Property's Revenue Potential</h2>
+        <p class="cta-band-body">
+          If you're considering short-term rental management in Denver, you can connect directly
+          with the Effortless Rental Group team to learn more about their approach to revenue
+          management and property operations.
+        </p>
+        <a
+          class="btn btn--large"
+          href="https://effortlessrentalgroup.com/?ref=highline&utm_source=highline&utm_medium=referral&utm_campaign=highline_referral"
+          target="_blank"
+          rel="noopener noreferrer"
+          onclick="trackReferralClick('bottom_cta_section')"
+        >
+          See What Your Property Could Earn
+        </a>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         FAQ
+    ══════════════════════════════ -->
+    <section id="faq" class="section section--light">
+      <div class="container section-inner">
+        <h2 class="section-h2">Frequently Asked Questions</h2>
+        <dl class="faq-list">
+          <div class="faq-item">
+            <dt class="faq-q">Is Highline Denver still operating?</dt>
+            <dd class="faq-a">
+              Highline Denver is no longer operating as a short-term rental management company.
+            </dd>
+          </div>
+          <div class="faq-item">
+            <dt class="faq-q">Who should property owners contact for management services?</dt>
+            <dd class="faq-a">
+              Property owners seeking professional short-term rental management can contact
+              Effortless Rental Group, an independent company serving the Denver area.
+            </dd>
+          </div>
+          <div class="faq-item">
+            <dt class="faq-q">What services does Effortless Rental Group provide?</dt>
+            <dd class="faq-a">
+              Effortless Rental Group provides vacation rental management services including
+              revenue optimization, listing management across major booking platforms, guest
+              communication, and coordinated property operations.
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════
+       FOOTER
+  ══════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo logo-mark">
+        <span class="logo-h">H</span><span class="logo-l">L</span>
+      </div>
+      <div class="footer-copy">
+        <p class="footer-name">Highline Denver</p>
+        <p class="footer-tagline">Former short-term rental operations provider.</p>
+        <p class="footer-note">Highline Management is no longer operating as a business.</p>
+        <p class="footer-note">
+          Visitors seeking short-term rental property management services may contact
+          <a
+            class="footer-link"
+            href="https://effortlessrentalgroup.com/?ref=highline&utm_source=highline&utm_medium=referral&utm_campaign=highline_referral"
+            target="_blank"
+            rel="noopener noreferrer"
+            onclick="trackReferralClick('footer_link')"
+          >Effortless Rental Group</a>,
+          an independent company serving the Denver area.
+        </p>
+        <p class="footer-note footer-legal">
+          Effortless Rental Group is not owned or operated by Highline Denver.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════
+       MOBILE STICKY CTA
+  ══════════════════════════════ -->
+  <div class="sticky-cta" role="complementary" aria-label="Quick action">
+    <a
+      class="sticky-cta-btn"
+      href="https://effortlessrentalgroup.com/?ref=highline&utm_source=highline&utm_medium=referral&utm_campaign=highline_referral"
+      target="_blank"
+      rel="noopener noreferrer"
+      onclick="trackReferralClick('sticky_mobile_cta')"
+    >
+      Get a Free Revenue Analysis
+    </a>
+  </div>
+
+</body>
+</html>
