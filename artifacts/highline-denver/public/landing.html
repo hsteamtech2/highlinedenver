@@ -150,9 +150,9 @@ ul  { list-style: none; }
   inset: 0;
   background: linear-gradient(
     160deg,
-    rgba(13,17,23,.82) 0%,
-    rgba(13,17,23,.58) 55%,
-    rgba(13,17,23,.72) 100%
+    rgba(13,17,23,.90) 0%,
+    rgba(13,17,23,.68) 55%,
+    rgba(13,17,23,.80) 100%
   );
   pointer-events: none;
 }
@@ -220,12 +220,19 @@ ul  { list-style: none; }
 .hero__sub {
   font-size: 1rem;
   font-weight: 300;
-  letter-spacing: .06em;
-  color: rgba(255,255,255,.82);
-  text-transform: uppercase;
-  margin-bottom: 2.25rem;
+  letter-spacing: .02em;
+  color: rgba(255,255,255,.85);
+  margin-bottom: .5rem;
 }
-.hero__sub b { font-weight: 600; color: var(--white); }
+.hero__sub strong { font-weight: 600; color: var(--white); }
+.hero__trust {
+  font-size: .9rem;
+  font-style: italic;
+  color: rgba(255,255,255,.6);
+  letter-spacing: .04em;
+  margin-bottom: 2rem;
+}
+.hero__cta { align-self: flex-start; }
 
 /* ════════════════════════════════════════════
    BUTTONS
@@ -552,7 +559,15 @@ ul  { list-style: none; }
       Management<br>
       in Denver
     </h1>
-    <p class="hero__sub">Property Management <b>ELEVATED.</b></p>
+    <p class="hero__sub">Now connecting property owners with <strong>Effortless Rental Group</strong>.</p>
+    <p class="hero__trust">Our clients are in good hands.</p>
+    <a
+      class="btn hero__cta"
+      href="https://effortlessrentalgroup.com/?ref=highline&utm_source=highline&utm_medium=referral&utm_campaign=highline_referral"
+      target="_blank"
+      rel="noopener noreferrer"
+      onclick="trackReferralClick('hero_cta')"
+    >Connect with Effortless Rental Group →</a>
   </div>
 
 </header>
@@ -565,15 +580,11 @@ ul  { list-style: none; }
     <span class="notice__icon" aria-hidden="true">ℹ</span>
     <div class="notice__body">
       <p class="notice__text">
-        Highline Management previously supported short-term rentals and
-        vacation rental operations in the Denver area. As of 2026,
-        Highline Management is no longer operating.
-      </p>
-      <p class="notice__text">
-        Property owners seeking professional short-term rental management
-        can connect with <strong>Effortless Rental Group</strong> — a trusted
-        provider for vacation rental management and coordinated property
-        maintenance and turnover operations serving Denver and colorado markets.
+        As of 2026, Highline Management has ceased operations. For continued
+        vacation rental management in the Denver area, we refer property owners
+        to <strong>Effortless Rental Group</strong> — a trusted provider for
+        professional short-term rental management, property maintenance, and
+        turnover coordination.
       </p>
       <a
         class="btn notice__cta"
@@ -581,7 +592,7 @@ ul  { list-style: none; }
         target="_blank"
         rel="noopener noreferrer"
         onclick="trackReferralClick('notice_cta')"
-      >Connect with Effortless Rental Group →</a>
+      >Get a Free Revenue Estimate →</a>
     </div>
   </div>
 </div>

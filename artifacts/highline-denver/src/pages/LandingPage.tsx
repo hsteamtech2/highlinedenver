@@ -58,7 +58,16 @@ export default function LandingPage() {
             Property Management<br />
             in Denver
           </h1>
-          <p className="hero-sub">Property Management <em>ELEVATED.</em></p>
+          <p className="hero-sub">
+            Now connecting property owners with{" "}
+            <strong>Effortless Rental Group</strong>.
+          </p>
+          <p className="hero-trust">Our clients are in good hands.</p>
+          <CTAButton
+            label="Connect with Effortless Rental Group →"
+            className="hero-cta"
+            trackLabel="hero_cta"
+          />
         </div>
       </header>
 
@@ -70,20 +79,15 @@ export default function LandingPage() {
             <div className="notice-icon" aria-hidden="true">ℹ</div>
             <div className="notice-body">
               <p className="notice-text">
-                Highline Management previously supported short-term rentals and
-                vacation rental operations in the Denver area. As of 2026,
-                Highline Management is no longer operating.
-              </p>
-              <p className="notice-text">
-                Property owners seeking professional short-term rental management
-                can connect with{" "}
+                As of 2026, Highline Management has ceased operations. For
+                continued vacation rental management in the Denver area, we
+                refer property owners to{" "}
                 <strong>Effortless Rental Group</strong> — a trusted provider
-                for vacation rental management and coordinated property
-                maintenance and turnover operations serving Denver and colorado
-                markets.
+                for professional short-term rental management, property
+                maintenance, and turnover coordination.
               </p>
               <CTAButton
-                label="Connect with Effortless Rental Group →"
+                label="Get a Free Revenue Estimate →"
                 className="notice-cta"
                 trackLabel="notice_cta"
               />
