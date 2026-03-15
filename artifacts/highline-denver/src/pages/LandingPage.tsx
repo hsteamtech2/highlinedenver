@@ -45,6 +45,14 @@ export default function LandingPage() {
       <header className="hero" role="banner">
         <div className="hero-overlay" aria-hidden="true" />
         <div className="hero-content">
+          <div className="hero-logo">
+            <img
+              src="/highline-logo.png"
+              alt="Highline Management"
+              className="hero-logo-img"
+            />
+            <span className="hero-logo-name">Highline Management</span>
+          </div>
           <h1 className="hero-h1">
             Short-Term Rental<br />
             Property Management<br />

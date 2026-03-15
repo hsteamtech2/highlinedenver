@@ -184,6 +184,28 @@ ul  { list-style: none; }
   padding: 5rem var(--px) 4.5rem;
 }
 
+.hero__logo {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  margin-bottom: 1.75rem;
+}
+.hero__logo-img {
+  height: 52px;
+  width: auto;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,.5));
+}
+.hero__logo-name {
+  font-family: var(--font-d);
+  font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1;
+  text-shadow: 0 1px 4px rgba(0,0,0,.6);
+}
+
 .hero__h1 {
   font-family: var(--font-d);
   font-size: clamp(3rem, 12vw, 5.5rem);
@@ -519,6 +541,10 @@ ul  { list-style: none; }
   <div class="hero__veil" aria-hidden="true"></div>
 
   <div class="hero__body">
+    <div class="hero__logo">
+      <img src="highline-logo.png" alt="Highline Management" class="hero__logo-img">
+      <span class="hero__logo-name">Highline Management</span>
+    </div>
     <h1 class="hero__h1">
       Short-Term<br>
       Rental<br>
