@@ -128,14 +128,20 @@ ul {
 @media (min-width: 64rem) {
   .hero-content {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 290px;
-    gap: 2rem;
-    max-width: 1280px;
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: 2.5rem;
+    max-width: 1280px !important;
     margin-inline: auto;
     align-items: start;
     padding: 2.5rem 2rem 4rem;
   }
-  .hero-left .hero-h1 { font-size: clamp(2rem, 2.4vw, 2.6rem) !important; }
+  .hero-left {
+    min-width: 0;
+  }
+  .hero-left .hero-h1 {
+    font-size: clamp(3rem, 3.5vw, 3.8rem) !important;
+    overflow-wrap: break-word;
+  }
   .hero-right { display: block; }
   .hero-left .hero-cta--mobile { display: none !important; }
 }
