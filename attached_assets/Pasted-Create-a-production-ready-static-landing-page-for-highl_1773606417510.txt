@@ -1,0 +1,199 @@
+Create a production-ready static landing page for highlinedenver.com.
+
+Goal:
+Build a mobile-friendly, high-converting referral landing page for Highline Denver. Highline is no longer operating, and the page should direct visitors to Effortless Rental Group through a tracked referral CTA.
+
+Important requirements:
+- Keep the current branding style of the existing Highline site as closely as possible
+- Use a clean, premium, hospitality-oriented design
+- Mobile-first responsive layout
+- Fast-loading static page
+- Accessible semantic HTML
+- Strong UX and CRO
+- Clear CTA hierarchy
+- SEO-friendly structure
+- Include title tag, meta description, Open Graph tags, canonical tag, and FAQ schema
+- Use pure HTML/CSS/JS unless absolutely necessary
+- Output complete code ready to deploy
+
+Design requirements:
+- Match current branding using the provided assets, colors, screenshots, and current site styling
+- Preserve visual consistency with the current site
+- Use generous spacing, clean typography, and obvious CTA buttons
+- Must look polished on iPhone first, then desktop
+- Include hover states, focus states, and strong button sizing
+- Make the layout responsive for mobile, tablet, and desktop
+- Include a simple sticky CTA on mobile only if it improves conversion without hurting UX
+- Keep the page visually concise and easy to scan
+- Use a premium hospitality / property-management aesthetic
+- Prioritize trust, clarity, and fast decision-making over excessive text
+
+Page strategy:
+- This is a short referral bridge page, not a long-form sales page
+- The page should quickly explain that Highline is no longer operating
+- It should position Effortless Rental Group as the recommended independent provider
+- It should encourage click-through quickly with minimal friction
+- The page should be optimized for both UX/CRO and search intent around:
+  - short-term rental management Denver
+  - vacation rental management Denver
+  - Airbnb management Denver
+
+Tracking requirements:
+- Use this CTA URL everywhere on the page:
+https://effortlessrentalgroup.com/?ref=highline&utm_source=highline&utm_medium=referral&utm_campaign=highline_referral
+- Add outbound CTA click tracking for GA4 using a custom event:
+  - event name: referral_click
+  - include event_label or equivalent identifying ERG / Highline referral CTA
+- Make the primary and secondary CTA buttons track this event
+- Keep code clean and easy to edit if tracking needs to be adjusted later
+
+Content:
+Use the following exact page copy as the content basis. Minor UX edits for formatting, headings, spacing, and scanability are allowed, but do not materially change the meaning.
+
+TITLE TAG:
+Denver Short-Term Rental Property Management | Recommended Provider
+
+META DESCRIPTION:
+Highline Management is no longer operating. Denver property owners seeking short-term rental management can connect with a trusted provider offering revenue optimization, guest services, and coordinated property operations.
+
+H1:
+Short-Term Rental Property Management in Denver
+
+SUBHEADLINE:
+Highline Management previously supported vacation rental operations in the Denver area. As of 2026, Highline is no longer operating.
+
+Property owners seeking professional short-term rental management can connect with Effortless Rental Group — a trusted provider for vacation rental management and coordinated property operations serving Denver and surrounding markets.
+
+PRIMARY CTA:
+Get a Free Property Revenue Analysis
+
+SECTION:
+Why Property Owners Choose Professional STR Management
+
+BODY:
+Managing a successful short-term rental involves more than listing a property online. Pricing strategy, guest communication, cleaning coordination, and property readiness all impact occupancy and guest reviews.
+
+Professional management helps owners:
+- Optimize nightly pricing and revenue
+- Maintain consistent guest communication
+- Coordinate cleaning and turnovers between stays
+- Manage maintenance and property logistics
+- Maintain strong reviews and guest experiences
+
+Many property owners choose professional management to improve performance while reducing the day-to-day responsibilities of hosting.
+
+SECTION:
+Why We Recommend Effortless Rental Group
+
+BODY:
+Based on experience supporting short-term rental operations in the Denver market, Effortless Rental Group stands out for combining revenue optimization, guest services, and coordinated property operations into one structured management system.
+
+Their services typically include:
+- Dynamic pricing and revenue optimization
+- Listing management across Airbnb, Vrbo, and major booking platforms
+- Professional guest communication and support
+- Turnover coordination and cleaning management
+- Maintenance oversight and property operations
+- Reporting and performance insights for property owners
+
+This integrated approach helps vacation rental owners operate their properties more efficiently while maintaining high guest satisfaction.
+
+SECTION:
+Is Professional STR Management Right for You?
+
+BODY:
+Effortless Rental Group typically works with property owners who:
+- Own a short-term rental property in the Denver area
+- Want to improve occupancy and nightly revenue
+- Prefer a professional team managing guest communication
+- Want reliable systems for turnovers, maintenance, and property readiness
+
+If that sounds like what you’re looking for, their team can review your property and explain how professional management could support your goals.
+
+SECTION:
+Airbnb Management in Denver
+
+BODY:
+Many Denver property owners list their homes on platforms such as Airbnb and Vrbo to generate short-term rental income.
+
+Managing these listings successfully requires consistent pricing adjustments, guest communication, cleaning coordination, and operational oversight between stays.
+
+Professional Airbnb management helps owners:
+- Optimize listing visibility on booking platforms
+- Adjust pricing dynamically based on demand
+- Maintain fast guest response times
+- Coordinate turnovers and property readiness
+
+Effortless Rental Group supports vacation rental owners across the Denver area by managing Airbnb listings and coordinating the operational systems that keep properties performing at their best.
+
+CTA SECTION HEADING:
+Explore Your Property’s Revenue Potential
+
+CTA SECTION BODY:
+If you're considering short-term rental management in Denver, you can connect directly with the Effortless Rental Group team to learn more about their approach to revenue management and property operations.
+
+CTA BUTTON:
+See What Your Property Could Earn
+
+FAQ:
+1. Is Highline Denver still operating?
+Highline Denver is no longer operating as a short-term rental management company.
+
+2. Who should property owners contact for management services?
+Property owners seeking professional short-term rental management can contact Effortless Rental Group, an independent company serving the Denver area.
+
+3. What services does Effortless Rental Group provide?
+Effortless Rental Group provides vacation rental management services including revenue optimization, listing management across major booking platforms, guest communication, and coordinated property operations.
+
+FOOTER:
+Highline Denver
+Former short-term rental operations provider.
+
+Highline Management is no longer operating as a business.
+
+Visitors seeking short-term rental property management services may contact Effortless Rental Group, an independent company serving the Denver area.
+
+Effortless Rental Group is not owned or operated by Highline Denver.
+
+Legal / positioning requirements:
+- Do not describe Highline and Effortless Rental Group as partners
+- Do not imply co-ownership, shared operations, or an ongoing joint venture
+- Make it clear Effortless Rental Group is an independent company
+- Keep the language legally safe while still conversion-oriented
+
+SEO requirements:
+- Use strong semantic headings and clean HTML structure
+- Include FAQ schema
+- Include WebPage schema
+- Include Organization schema if appropriate for Highline as a former business / brand reference
+- Include internal anchor links near the top if helpful for UX
+- Ensure the content naturally supports keyword relevance for:
+  - short-term rental management Denver
+  - vacation rental management Denver
+  - Airbnb management Denver
+
+Brand assets:
+[PASTE CURRENT SITE URL]
+[PASTE LOGO PATHS]
+[PASTE HEX COLORS]
+[PASTE FONT NAMES OR CLOSEST WEB FONT ALTERNATIVES]
+[PASTE SCREENSHOTS OF CURRENT SITE - DESKTOP + MOBILE]
+[PASTE ANY BUTTON STYLES / BRAND RULES]
+
+Technical requirements:
+- Provide production-ready code
+- Prefer one self-contained HTML file with embedded CSS and minimal JS unless a cleaner structure is better
+- No frameworks unless absolutely necessary
+- Optimize for Core Web Vitals and fast load
+- Include accessible nav / jump links only if useful
+- Buttons must be thumb-friendly on mobile
+- Ensure strong contrast and readable type on small screens
+- Make all external links open appropriately and safely if needed
+- Add clear comments showing where to swap logo paths, colors, and tracking IDs if necessary
+
+Output format:
+1. Full HTML
+2. Full CSS
+3. Any minimal JS if needed
+4. Notes for where to replace assets
+5. Brief deployment instructions for Cloudflare Pages and/or Vercel

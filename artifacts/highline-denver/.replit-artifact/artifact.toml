@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Highline Denver"
+version = "1.0.0"
+id = "artifacts/highline-denver"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+localPort = 25346
+name = "web"
+paths = ["/"]
+
+[services.development]
+run = "pnpm --filter @workspace/highline-denver run dev"
+
+[services.env]
+PORT = "25346"
+BASE_PATH = "/"
+
+[services.production]
+build = ["pnpm", "--filter", "@workspace/highline-denver", "run", "build"]
+publicDir = "artifacts/highline-denver/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
