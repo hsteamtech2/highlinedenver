@@ -58,8 +58,8 @@ export default function LandingPage() {
 
           <div className="hero-left">
             <h1 className="hero-h1">
-              Denver Short&#x2011;Term<br />
-              Rental Management
+              Short&#x2011;Term Rental Management<br />
+              in Denver &amp; Beyond
             </h1>
             <p className="hero-sub">
               Now connecting property owners with our trusted provider,{" "}
@@ -100,8 +100,8 @@ export default function LandingPage() {
             <div className="notice-body">
               <p className="notice-text">
                 As of 2026, Highline Management has ceased operations. For
-                continued vacation rental management in the Denver area, we
-                refer property owners to{" "}
+                continued STR and vacation rental management in the Denver or
+                Colorado market, we refer property owners to{" "}
                 <strong>Effortless Rental Group</strong> — a trusted provider
                 for professional short-term rental management, property
                 maintenance, and turnover coordination.
@@ -119,8 +119,8 @@ export default function LandingPage() {
             <p className="section-body">
               Effortless Rental Group combines revenue optimization, guest
               services, and coordinated property operations into one structured
-              management system — purpose-built for the Denver short-term
-              rental market.
+              management system — purpose-built for the Denver and Colorado
+              short-term rental market.
             </p>
             <ul className="feature-list">
               <li>Dynamic pricing and revenue optimization</li>
@@ -185,10 +185,10 @@ export default function LandingPage() {
           <div className="cta-section-overlay" aria-hidden="true" />
           <div className="container cta-section-inner">
             <h2 className="cta-section-h2">
-              Get a Free Revenue Estimate for Your Denver Property
+              Get a Free Revenue Estimate for Your Denver or Colorado STR Property
             </h2>
             <p className="cta-section-body">
-              Effortless Rental Group reviews Denver short-term rentals and
+              Effortless Rental Group reviews Colorado short-term rentals and
               provides a free revenue analysis — no commitment required.
             </p>
             <CTAButton
