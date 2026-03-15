@@ -184,12 +184,19 @@ ul  { list-style: none; }
   padding: 3rem var(--px) 3.5rem;
 }
 
+.hero__topbar {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem var(--px) 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
 .hero__logo {
   display: flex;
   align-items: center;
   gap: .75rem;
-  margin-bottom: 1.75rem;
-  align-self: center;
 }
 .hero__logo-img {
   height: 52px;
@@ -271,9 +278,11 @@ ul  { list-style: none; }
    NOTICE BAND
 ════════════════════════════════════════════ */
 .notice {
-  background: var(--navy);
-  color: rgba(255,255,255,.88);
-  padding: 1.75rem 0;
+  background: #f8f5f0;
+  color: var(--navy);
+  padding: 2rem 0;
+  border-top: 4px solid var(--gold);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
 }
 .notice__inner {
   display: flex;
@@ -283,9 +292,10 @@ ul  { list-style: none; }
 .notice__icon {
   flex-shrink: 0;
   font-size: 1rem;
-  color: var(--gold);
+  color: var(--navy);
   margin-top: .2rem;
 }
+.notice__text { color: var(--navy) !important; }
 .notice__body {
   display: flex;
   flex-direction: column;
@@ -519,11 +529,8 @@ ul  { list-style: none; }
 ════════════════════════════════════════════ */
 @media (min-width: 90rem) {
   :root { --px: 3rem; --py: 5rem; }
-  .hero__h1   { font-size: clamp(3rem, 5vw, 5rem); }
-  .hero__body {
-    max-width: 1000px;
-    padding-left: max(3rem, calc((100vw - 1200px) / 2 + 3rem));
-  }
+  .hero__h1   { font-size: clamp(3rem, 4vw, 4.5rem); }
+  .hero__body { max-width: 860px; }
 }
 
 /* ════════════════════════════════════════════
@@ -549,11 +556,14 @@ ul  { list-style: none; }
 <header class="hero" role="banner">
   <div class="hero__veil" aria-hidden="true"></div>
 
-  <div class="hero__body">
+  <div class="hero__topbar">
     <div class="hero__logo">
       <img src="highline-logo.png" alt="Highline Management" class="hero__logo-img">
       <span class="hero__logo-name">Highline Management</span>
     </div>
+  </div>
+
+  <div class="hero__body">
     <h1 class="hero__h1">
       Denver Short-Term<br>
       Rental Management
@@ -585,13 +595,6 @@ ul  { list-style: none; }
         professional short-term rental management, property maintenance, and
         turnover coordination.
       </p>
-      <a
-        class="btn notice__cta"
-        href="https://effortlessrentalgroup.com/?ref=highline&utm_source=highline&utm_medium=referral&utm_campaign=highline_referral"
-        target="_blank"
-        rel="noopener noreferrer"
-        onclick="trackReferralClick('notice_cta')"
-      >Get a Free Revenue Estimate →</a>
     </div>
   </div>
 </div>

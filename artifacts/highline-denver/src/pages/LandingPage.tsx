@@ -44,7 +44,7 @@ export default function LandingPage() {
       {/* ── HERO ── */}
       <header className="hero" role="banner">
         <div className="hero-overlay" aria-hidden="true" />
-        <div className="hero-content">
+        <div className="hero-topbar">
           <div className="hero-logo">
             <img
               src="/highline-logo.png"
@@ -53,6 +53,8 @@ export default function LandingPage() {
             />
             <span className="hero-logo-name">Highline Management</span>
           </div>
+        </div>
+        <div className="hero-content">
           <h1 className="hero-h1">
             Denver Short-Term<br />
             Rental Management
@@ -85,11 +87,6 @@ export default function LandingPage() {
                 for professional short-term rental management, property
                 maintenance, and turnover coordination.
               </p>
-              <CTAButton
-                label="Get a Free Revenue Estimate →"
-                className="notice-cta"
-                trackLabel="notice_cta"
-              />
             </div>
           </div>
         </section>
