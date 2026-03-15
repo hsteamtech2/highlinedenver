@@ -28,7 +28,7 @@
   --font-body: "Inter", system-ui, sans-serif;
 
   --max-width: 900px;
-  --section-pad-y: 5rem;
+  --section-pad-y: 3.25rem;
   --section-pad-x: 1.5rem;
 }
 
@@ -327,7 +327,7 @@ ul {
   background-size: cover;
   background-position: center 60%;
   background-attachment: fixed;
-  padding: 6rem 0;
+  padding: var(--section-pad-y) 0;
   color: var(--hl-white);
   overflow: hidden;
 }
@@ -521,7 +521,7 @@ ul {
 /* Desktop */
 @media (min-width: 900px) {
   :root {
-    --section-pad-y: 7rem;
+    --section-pad-y: 4.5rem;
   }
 
   .hero-content {
