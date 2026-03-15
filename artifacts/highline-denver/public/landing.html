@@ -197,15 +197,6 @@ ul  { list-style: none; }
   padding: 1.5rem var(--px) 5rem;
 }
 
-.hero__eyebrow {
-  font-size: .68rem;
-  font-weight: 500;
-  letter-spacing: .16em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: .9rem;
-}
-
 .hero__h1 {
   font-family: var(--font-d);
   font-size: clamp(3rem, 12vw, 5.5rem);
@@ -278,7 +269,7 @@ ul  { list-style: none; }
 .notice {
   background: var(--navy);
   color: rgba(255,255,255,.88);
-  padding: 1.4rem 0;
+  padding: 1.75rem 0;
 }
 .notice__inner {
   display: flex;
@@ -289,34 +280,15 @@ ul  { list-style: none; }
   flex-shrink: 0;
   font-size: 1rem;
   color: var(--gold);
-  margin-top: .15rem;
+  margin-top: .2rem;
+}
+.notice__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
 }
 .notice__text { font-size: .93rem; line-height: 1.6; }
-.notice__link { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
-.notice__link:hover { color: var(--white); }
-
-/* ════════════════════════════════════════════
-   JUMP NAV
-════════════════════════════════════════════ */
-.jumps {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .35rem 1rem;
-  padding-block: 1.25rem;
-  border-bottom: 1px solid var(--border);
-}
-.jumps a {
-  font-size: .75rem;
-  font-weight: 500;
-  color: var(--text-light);
-  letter-spacing: .04em;
-  text-transform: uppercase;
-  text-decoration: underline;
-  text-decoration-color: transparent;
-  text-underline-offset: 3px;
-  transition: color .15s, text-decoration-color .15s;
-}
-.jumps a:hover { color: var(--navy); text-decoration-color: var(--gold); }
+.notice__cta  { align-self: flex-start; }
 
 /* ════════════════════════════════════════════
    SECTIONS
@@ -566,7 +538,6 @@ ul  { list-style: none; }
   </nav>
 
   <div class="hero__body">
-    <p class="hero__eyebrow">Denver Short-Term Rental Management</p>
     <h1 class="hero__h1">
       Short-Term<br>
       Rental<br>
@@ -597,64 +568,29 @@ ul  { list-style: none; }
 <div class="notice" role="status">
   <div class="wrap notice__inner">
     <span class="notice__icon" aria-hidden="true">ℹ</span>
-    <p class="notice__text">
-      <strong>Highline Management is no longer operating.</strong>
-      Highline previously supported vacation rental operations in the Denver area.
-      As of 2026, Highline has ceased operations. Property owners seeking professional
-      short-term rental management can connect with
+    <div class="notice__body">
+      <p class="notice__text">
+        <strong>Highline Management is no longer operating.</strong>
+        Highline previously supported vacation rental operations in the Denver area.
+        As of 2026, Highline has ceased operations. Property owners seeking professional
+        short-term rental management can connect with Effortless Rental Group — a trusted,
+        independent provider serving Denver and surrounding markets.
+      </p>
       <a
-        class="notice__link"
+        class="btn notice__cta"
         href="https://effortlessrentalgroup.com/?ref=highline&utm_source=highline&utm_medium=referral&utm_campaign=highline_referral"
         target="_blank"
         rel="noopener noreferrer"
-        onclick="trackReferralClick('notice_link')"
-      >Effortless Rental Group</a>
-      — a trusted provider serving Denver and surrounding markets.
-    </p>
+        onclick="trackReferralClick('notice_cta')"
+      >Connect with Effortless Rental Group</a>
+    </div>
   </div>
 </div>
-
-<!-- ════════════════════════════════════════════
-     JUMP NAV
-════════════════════════════════════════════ -->
-<nav class="wrap jumps" aria-label="Page sections">
-  <a href="#why-management">Why Professional Management</a>
-  <a href="#why-erg">Why Effortless Rental Group</a>
-  <a href="#is-it-right">Is It Right for You?</a>
-  <a href="#airbnb">Airbnb Management</a>
-  <a href="#faq">FAQ</a>
-</nav>
 
 <!-- ════════════════════════════════════════════
      MAIN CONTENT
 ════════════════════════════════════════════ -->
 <main id="main">
-
-  <!-- WHY PROFESSIONAL MANAGEMENT -->
-  <section id="why-management" class="sec sec--light" aria-labelledby="h-why-mgmt">
-    <div class="wrap sec__inner">
-      <h2 id="h-why-mgmt" class="sec__h2">
-        Why Property Owners Choose Professional STR Management
-      </h2>
-      <p class="sec__p">
-        Managing a successful short-term rental involves more than listing a property online.
-        Pricing strategy, guest communication, cleaning coordination, and property readiness
-        all impact occupancy and guest reviews.
-      </p>
-      <p class="sec__p">Professional management helps owners:</p>
-      <ul class="flist">
-        <li>Optimize nightly pricing and revenue</li>
-        <li>Maintain consistent guest communication</li>
-        <li>Coordinate cleaning and turnovers between stays</li>
-        <li>Manage maintenance and property logistics</li>
-        <li>Maintain strong reviews and guest experiences</li>
-      </ul>
-      <p class="sec__p">
-        Many property owners choose professional management to improve performance while
-        reducing the day-to-day responsibilities of hosting.
-      </p>
-    </div>
-  </section>
 
   <!-- WHY EFFORTLESS RENTAL GROUP -->
   <section id="why-erg" class="sec sec--dark" aria-labelledby="h-why-erg">
@@ -687,6 +623,32 @@ ul  { list-style: none; }
           onclick="trackReferralClick('why_erg_cta')"
         >Get a Free Property Revenue Analysis</a>
       </div>
+    </div>
+  </section>
+
+  <!-- WHY PROFESSIONAL MANAGEMENT -->
+  <section id="why-management" class="sec sec--light" aria-labelledby="h-why-mgmt">
+    <div class="wrap sec__inner">
+      <h2 id="h-why-mgmt" class="sec__h2">
+        Why Property Owners Choose Professional STR Management
+      </h2>
+      <p class="sec__p">
+        Managing a successful short-term rental involves more than listing a property online.
+        Pricing strategy, guest communication, cleaning coordination, and property readiness
+        all impact occupancy and guest reviews.
+      </p>
+      <p class="sec__p">Professional management helps owners:</p>
+      <ul class="flist">
+        <li>Optimize nightly pricing and revenue</li>
+        <li>Maintain consistent guest communication</li>
+        <li>Coordinate cleaning and turnovers between stays</li>
+        <li>Manage maintenance and property logistics</li>
+        <li>Maintain strong reviews and guest experiences</li>
+      </ul>
+      <p class="sec__p">
+        Many property owners choose professional management to improve performance while
+        reducing the day-to-day responsibilities of hosting.
+      </p>
     </div>
   </section>
 
