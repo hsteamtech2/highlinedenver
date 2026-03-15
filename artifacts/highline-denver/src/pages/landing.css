@@ -262,7 +262,9 @@ ul {
 }
 
 .notice-text {
-  color: var(--hl-navy);
+  color: #1a1a2e !important;
+  font-size: 1rem;
+  line-height: 1.7;
 }
 
 .notice-body {
