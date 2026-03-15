@@ -499,7 +499,7 @@ ul {
 /* Tablet */
 @media (min-width: 640px) {
   .hero-content {
-    padding: 5rem 3rem 4.5rem;
+    padding: 5rem 3rem 3.25rem;
   }
 
   .hero-h1 {
@@ -525,7 +525,7 @@ ul {
   }
 
   .hero-content {
-    padding: 5.5rem 4rem 5rem;
+    padding: 5.5rem 4rem 3.5rem;
     max-width: 750px;
   }
 
