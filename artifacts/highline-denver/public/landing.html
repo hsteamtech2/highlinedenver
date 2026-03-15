@@ -180,8 +180,57 @@ ul  { list-style: none; }
   z-index: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 2rem;
   padding: 3rem var(--px) 3.5rem;
+}
+.hero__right { display: none; }
+.hero__cta--mobile { display: inline-flex; }
+
+/* desktop two-column hero */
+@media (min-width: 64rem) {
+  .hero__body {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 3rem;
+    max-width: 1280px;
+    margin-inline: auto;
+    align-items: center;
+    padding: 3.5rem var(--px) 4rem;
+  }
+  .hero__right { display: block; }
+  .hero__left .hero__cta--mobile { display: none !important; }
+}
+
+/* CTA card */
+.hero__cta-card {
+  background: rgba(13,17,23,.82);
+  border: 1px solid rgba(201,169,110,.35);
+  border-top: 3px solid var(--gold);
+  border-radius: 6px;
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  backdrop-filter: blur(8px);
+}
+.hero__card-eyebrow {
+  font-family: var(--font-d);
+  font-size: .7rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: -.25rem;
+}
+.hero__card-body {
+  font-size: .95rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,.82);
+}
+.hero__card-note {
+  font-size: .78rem;
+  color: rgba(255,255,255,.42);
+  letter-spacing: .04em;
+  text-align: center;
 }
 
 .hero__topbar {
@@ -531,7 +580,6 @@ ul  { list-style: none; }
 @media (min-width: 90rem) {
   :root { --px: 3rem; --py: 5rem; }
   .hero__h1   { font-size: clamp(3rem, 4vw, 4.5rem); }
-  .hero__body { max-width: 860px; }
 }
 
 /* ════════════════════════════════════════════
@@ -565,19 +613,38 @@ ul  { list-style: none; }
   </div>
 
   <div class="hero__body">
-    <h1 class="hero__h1">
-      Denver Short-Term<br>
-      Rental Management
-    </h1>
-    <p class="hero__sub">Now connecting property owners with <strong>Effortless Rental Group</strong>.</p>
-    <p class="hero__trust">Our clients are in good hands.</p>
-    <a
-      class="btn hero__cta"
-      href="https://effortlessrentalgroup.com/?ref=highline&utm_source=highline&utm_medium=referral&utm_campaign=highline_referral"
-      target="_blank"
-      rel="noopener noreferrer"
-      onclick="trackReferralClick('hero_cta')"
-    >Connect with Effortless Rental Group →</a>
+
+    <div class="hero__left">
+      <h1 class="hero__h1">
+        Denver Short-Term<br>
+        Rental Management
+      </h1>
+      <p class="hero__sub">Now connecting property owners with <strong>Effortless Rental Group</strong>.</p>
+      <p class="hero__trust">Our clients are in good hands.</p>
+      <a
+        class="btn hero__cta hero__cta--mobile"
+        href="https://effortlessrentalgroup.com/?ref=highline&utm_source=highline&utm_medium=referral&utm_campaign=highline_referral"
+        target="_blank"
+        rel="noopener noreferrer"
+        onclick="trackReferralClick('hero_cta')"
+      >Connect with Effortless Rental Group →</a>
+    </div>
+
+    <div class="hero__right">
+      <div class="hero__cta-card">
+        <p class="hero__card-eyebrow">Now accepting Denver property owners</p>
+        <p class="hero__card-body">Get matched with a trusted local STR manager for a free, no-obligation revenue estimate on your property.</p>
+        <a
+          class="btn hero__cta"
+          href="https://effortlessrentalgroup.com/?ref=highline&utm_source=highline&utm_medium=referral&utm_campaign=highline_referral"
+          target="_blank"
+          rel="noopener noreferrer"
+          onclick="trackReferralClick('hero_cta_card')"
+        >Get a Free Revenue Estimate →</a>
+        <p class="hero__card-note">Free estimate &nbsp;·&nbsp; No obligation</p>
+      </div>
+    </div>
+
   </div>
 
 </header>

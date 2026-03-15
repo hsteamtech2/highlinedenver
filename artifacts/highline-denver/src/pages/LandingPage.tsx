@@ -55,20 +55,37 @@ export default function LandingPage() {
           </div>
         </div>
         <div className="hero-content">
-          <h1 className="hero-h1">
-            Denver Short-Term<br />
-            Rental Management
-          </h1>
-          <p className="hero-sub">
-            Now connecting property owners with{" "}
-            <strong>Effortless Rental Group</strong>.
-          </p>
-          <p className="hero-trust">Our clients are in good hands.</p>
-          <CTAButton
-            label="Connect with Effortless Rental Group →"
-            className="hero-cta"
-            trackLabel="hero_cta"
-          />
+
+          <div className="hero-left">
+            <h1 className="hero-h1">
+              Denver Short-Term<br />
+              Rental Management
+            </h1>
+            <p className="hero-sub">
+              Now connecting property owners with{" "}
+              <strong>Effortless Rental Group</strong>.
+            </p>
+            <p className="hero-trust">Our clients are in good hands.</p>
+            <CTAButton
+              label="Connect with Effortless Rental Group →"
+              className="hero-cta hero-cta--mobile"
+              trackLabel="hero_cta"
+            />
+          </div>
+
+          <div className="hero-right">
+            <div className="hero-cta-card">
+              <p className="hero-card-eyebrow">Now accepting Denver property owners</p>
+              <p className="hero-card-body">Get matched with a trusted local STR manager for a free, no-obligation revenue estimate on your property.</p>
+              <CTAButton
+                label="Get a Free Revenue Estimate →"
+                className="hero-cta"
+                trackLabel="hero_cta_card"
+              />
+              <p className="hero-card-note">Free estimate &nbsp;·&nbsp; No obligation</p>
+            </div>
+          </div>
+
         </div>
       </header>
 

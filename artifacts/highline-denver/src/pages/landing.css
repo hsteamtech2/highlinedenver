@@ -117,9 +117,61 @@ ul {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 2rem;
   padding: 3rem 1.5rem 3.5rem;
-  max-width: 700px;
+}
+
+.hero-right { display: none; }
+.hero-cta--mobile { display: inline-flex; }
+
+/* Desktop two-column hero */
+@media (min-width: 64rem) {
+  .hero-content {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 3rem;
+    max-width: 1280px;
+    margin-inline: auto;
+    align-items: center;
+    padding: 3.5rem 1.5rem 4rem;
+  }
+  .hero-right { display: block; }
+  .hero-left .hero-cta--mobile { display: none !important; }
+}
+
+/* ── CTA CARD ── */
+.hero-cta-card {
+  background: rgba(13, 17, 23, 0.82);
+  border: 1px solid rgba(201, 169, 110, 0.35);
+  border-top: 3px solid var(--hl-gold);
+  border-radius: 6px;
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  backdrop-filter: blur(8px);
+}
+
+.hero-card-eyebrow {
+  font-family: var(--hl-font-display);
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--hl-gold);
+  margin-bottom: -0.25rem;
+}
+
+.hero-card-body {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.hero-card-note {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.42);
+  letter-spacing: 0.04em;
+  text-align: center;
 }
 
 /* ── HERO TOPBAR ── */
@@ -603,10 +655,6 @@ ul {
   :root {
     --section-pad-x: 3rem;
     --section-pad-y: 5rem;
-  }
-
-  .hero-content {
-    max-width: 860px;
   }
 
   .hero-h1 {
