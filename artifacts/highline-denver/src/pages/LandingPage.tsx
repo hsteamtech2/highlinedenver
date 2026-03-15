@@ -62,8 +62,10 @@ export default function LandingPage() {
               Rental Management
             </h1>
             <p className="hero-sub">
-              Now connecting property owners with{" "}
-              <strong>Effortless Rental Group</strong>.
+              Now connecting property owners with our trusted provider,{" "}
+              <strong>Effortless Rental Group</strong> for full service STR
+              management and a la carte property maintenance and turnover
+              operations.
             </p>
             <p className="hero-trust">Our clients are in good hands.</p>
             <CTAButton
