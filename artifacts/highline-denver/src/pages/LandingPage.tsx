@@ -44,14 +44,7 @@ export default function LandingPage() {
       {/* ── HERO ── */}
       <header className="hero" role="banner">
         <div className="hero-overlay" aria-hidden="true" />
-        <nav className="hero-nav">
-          <div className="logo-mark">
-            <span className="logo-h">H</span>
-            <span className="logo-l">L</span>
-          </div>
-        </nav>
         <div className="hero-content">
-          <p className="hero-eyebrow">Denver Short-Term Rental Management</p>
           <h1 className="hero-h1">
             Short-Term Rental
             <br />
@@ -66,11 +59,6 @@ export default function LandingPage() {
             trackLabel="hero_primary_cta"
           />
         </div>
-        <div className="hero-scroll-hint" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M12 5v14M5 12l7 7 7-7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
-        </div>
       </header>
 
       <main id="main-content">
@@ -79,54 +67,21 @@ export default function LandingPage() {
         <section className="notice-band" aria-label="Status notice">
           <div className="container notice-inner">
             <div className="notice-icon" aria-hidden="true">ℹ</div>
-            <p>
-              <strong>Highline Management is no longer operating.</strong>{" "}
-              Highline previously supported vacation rental operations in the
-              Denver area. As of 2026, Highline has ceased operations. Property
-              owners seeking professional short-term rental management can
-              connect with{" "}
-              <a href={CTA_URL} className="notice-link" target="_blank" rel="noopener noreferrer" onClick={() => trackReferralClick("notice_link")}>
-                Effortless Rental Group
-              </a>{" "}
-              — a trusted provider serving Denver and surrounding markets.
-            </p>
-          </div>
-        </section>
-
-        {/* ── JUMP LINKS ── */}
-        <nav className="jump-nav container" aria-label="Page sections">
-          <a href="#why-management">Why Professional Management</a>
-          <a href="#why-erg">Why Effortless Rental Group</a>
-          <a href="#is-it-right">Is It Right for You?</a>
-          <a href="#airbnb">Airbnb Management</a>
-          <a href="#faq">FAQ</a>
-        </nav>
-
-        {/* ── WHY MANAGEMENT ── */}
-        <section id="why-management" className="section section-light">
-          <div className="container section-inner">
-            <h2 className="section-h2">
-              Why Property Owners Choose Professional STR Management
-            </h2>
-            <p className="section-body">
-              Managing a successful short-term rental involves more than listing
-              a property online. Pricing strategy, guest communication, cleaning
-              coordination, and property readiness all impact occupancy and guest
-              reviews.
-            </p>
-            <p className="section-body">Professional management helps owners:</p>
-            <ul className="feature-list">
-              <li>Optimize nightly pricing and revenue</li>
-              <li>Maintain consistent guest communication</li>
-              <li>Coordinate cleaning and turnovers between stays</li>
-              <li>Manage maintenance and property logistics</li>
-              <li>Maintain strong reviews and guest experiences</li>
-            </ul>
-            <p className="section-body">
-              Many property owners choose professional management to improve
-              performance while reducing the day-to-day responsibilities of
-              hosting.
-            </p>
+            <div className="notice-body">
+              <p className="notice-text">
+                <strong>Highline Management is no longer operating.</strong>{" "}
+                Highline previously supported vacation rental operations in the
+                Denver area. As of 2026, Highline has ceased operations. Property
+                owners seeking professional short-term rental management can
+                connect with Effortless Rental Group — a trusted provider
+                serving Denver and surrounding markets.
+              </p>
+              <CTAButton
+                label="Connect with Effortless Rental Group"
+                className="notice-cta"
+                trackLabel="notice_cta"
+              />
+            </div>
           </div>
         </section>
 
@@ -168,8 +123,36 @@ export default function LandingPage() {
           </div>
         </section>
 
+        {/* ── WHY MANAGEMENT ── */}
+        <section id="why-management" className="section section-light">
+          <div className="container section-inner">
+            <h2 className="section-h2">
+              Why Property Owners Choose Professional STR Management
+            </h2>
+            <p className="section-body">
+              Managing a successful short-term rental involves more than listing
+              a property online. Pricing strategy, guest communication, cleaning
+              coordination, and property readiness all impact occupancy and guest
+              reviews.
+            </p>
+            <p className="section-body">Professional management helps owners:</p>
+            <ul className="feature-list">
+              <li>Optimize nightly pricing and revenue</li>
+              <li>Maintain consistent guest communication</li>
+              <li>Coordinate cleaning and turnovers between stays</li>
+              <li>Manage maintenance and property logistics</li>
+              <li>Maintain strong reviews and guest experiences</li>
+            </ul>
+            <p className="section-body">
+              Many property owners choose professional management to improve
+              performance while reducing the day-to-day responsibilities of
+              hosting.
+            </p>
+          </div>
+        </section>
+
         {/* ── IS IT RIGHT ── */}
-        <section id="is-it-right" className="section section-light">
+        <section id="is-it-right" className="section section-muted">
           <div className="container section-inner">
             <h2 className="section-h2">
               Is Professional STR Management Right for You?
@@ -197,7 +180,7 @@ export default function LandingPage() {
         </section>
 
         {/* ── AIRBNB MANAGEMENT ── */}
-        <section id="airbnb" className="section section-muted">
+        <section id="airbnb" className="section section-light">
           <div className="container section-inner">
             <h2 className="section-h2">Airbnb Management in Denver</h2>
             <p className="section-body">
