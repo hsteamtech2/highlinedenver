@@ -17,7 +17,7 @@
 <meta property="og:description" content="Highline Management is no longer operating. Connect with Effortless Rental Group for professional vacation rental management in Denver.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://highlinedenver.com/">
-<meta property="og:image" content="https://highlinedenver.com/highline-hero.png">
+<meta property="og:image" content="https://highlinedenver.com/highline-hero-clean.png">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
@@ -64,7 +64,7 @@
 
 <!-- ─────────────────────────────────────────────
      STYLES — mobile-first, no frameworks
-     Hero image: place highline-hero.png in the same
+     Hero image: place highline-hero-clean.png in the same
      directory as this file, or update the url() below.
 ───────────────────────────────────────────── -->
 <style>
@@ -141,9 +141,9 @@ ul  { list-style: none; }
   flex-direction: column;
   color: var(--white);
   background-color: var(--navy); /* shown while image loads */
-  background-image: url('highline-hero.png');
+  background-image: url('highline-hero-clean.png');
   background-size: cover;
-  background-position: center 30%;
+  background-position: center center;
   overflow: hidden;
 }
 
@@ -151,25 +151,15 @@ ul  { list-style: none; }
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    155deg,
-    rgba(13,17,23,.78) 0%,
-    rgba(13,17,23,.44) 55%,
-    rgba(13,17,23,.68) 100%
+    160deg,
+    rgba(13,17,23,.82) 0%,
+    rgba(13,17,23,.58) 55%,
+    rgba(13,17,23,.72) 100%
   );
   pointer-events: none;
 }
 
-/* ── hero nav ── */
-.hero__nav {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1.75rem var(--px) 1rem;
-}
-
-/* ── logo mark ── */
+/* ── logo mark (footer only) ── */
 .logo {
   display: inline-flex;
   align-items: baseline;
@@ -194,7 +184,7 @@ ul  { list-style: none; }
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1.5rem var(--px) 5rem;
+  padding: 4rem var(--px) 4rem;
 }
 
 .hero__h1 {
@@ -217,21 +207,6 @@ ul  { list-style: none; }
   margin-bottom: 2.25rem;
 }
 .hero__sub b { font-weight: 600; color: var(--white); }
-
-/* ── scroll indicator ── */
-.hero__scroll {
-  position: absolute;
-  bottom: 1.75rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-  opacity: .55;
-  animation: bob 2s ease-in-out infinite;
-}
-@keyframes bob {
-  0%,100% { transform: translateX(-50%) translateY(0); }
-  50%      { transform: translateX(-50%) translateY(7px); }
-}
 
 /* ════════════════════════════════════════════
    BUTTONS
@@ -354,7 +329,7 @@ ul  { list-style: none; }
 .cta-band {
   position: relative;
   background-color: var(--navy);
-  background-image: url('highline-hero.png');
+  background-image: url('highline-hero-clean.png');
   background-size: cover;
   background-position: center 60%;
   background-attachment: fixed; /* removed on mobile via media query */
@@ -531,12 +506,6 @@ ul  { list-style: none; }
 <header class="hero" role="banner">
   <div class="hero__veil" aria-hidden="true"></div>
 
-  <nav class="hero__nav" aria-label="Brand">
-    <div class="logo" aria-label="Highline Denver">
-      <span class="logo__h">H</span><span class="logo__l">L</span>
-    </div>
-  </nav>
-
   <div class="hero__body">
     <h1 class="hero__h1">
       Short-Term<br>
@@ -555,11 +524,6 @@ ul  { list-style: none; }
     >Get a Free Property Revenue Analysis</a>
   </div>
 
-  <div class="hero__scroll" aria-hidden="true">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-      <path d="M12 5v14M5 12l7 7 7-7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </div>
 </header>
 
 <!-- ════════════════════════════════════════════
