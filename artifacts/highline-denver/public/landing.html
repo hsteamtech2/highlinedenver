@@ -135,8 +135,6 @@ ul  { list-style: none; }
 ════════════════════════════════════════════ */
 .hero {
   position: relative;
-  min-height: 100svh;
-  min-height: 100vh; /* fallback */
   display: flex;
   flex-direction: column;
   color: var(--white);
@@ -180,11 +178,10 @@ ul  { list-style: none; }
 .hero__body {
   position: relative;
   z-index: 1;
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 4rem var(--px) 4rem;
+  padding: 5rem var(--px) 4.5rem;
 }
 
 .hero__h1 {
@@ -391,6 +388,8 @@ ul  { list-style: none; }
   color: var(--text-light);
   line-height: 1.65;
 }
+.faq__link { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
+.faq__link:hover { color: var(--navy); }
 
 /* ════════════════════════════════════════════
    FOOTER
@@ -515,13 +514,6 @@ ul  { list-style: none; }
       in Denver
     </h1>
     <p class="hero__sub">Property Management <b>ELEVATED.</b></p>
-    <a
-      class="btn btn--fw"
-      href="https://effortlessrentalgroup.com/?ref=highline&utm_source=highline&utm_medium=referral&utm_campaign=highline_referral"
-      target="_blank"
-      rel="noopener noreferrer"
-      onclick="trackReferralClick('hero_primary_cta')"
-    >Get a Free Property Revenue Analysis</a>
   </div>
 
 </header>
@@ -535,10 +527,10 @@ ul  { list-style: none; }
     <div class="notice__body">
       <p class="notice__text">
         <strong>Highline Management is no longer operating.</strong>
-        Highline previously supported vacation rental operations in the Denver area.
         As of 2026, Highline has ceased operations. Property owners seeking professional
-        short-term rental management can connect with Effortless Rental Group — a trusted,
-        independent provider serving Denver and surrounding markets.
+        short-term rental management in the Denver area can connect with
+        <strong>Effortless Rental Group</strong> — the provider we recommend
+        for local vacation rental management.
       </p>
       <a
         class="btn notice__cta"
@@ -546,7 +538,7 @@ ul  { list-style: none; }
         target="_blank"
         rel="noopener noreferrer"
         onclick="trackReferralClick('notice_cta')"
-      >Connect with Effortless Rental Group</a>
+      >Connect with Effortless Rental Group →</a>
     </div>
   </div>
 </div>
@@ -561,23 +553,18 @@ ul  { list-style: none; }
     <div class="wrap sec__inner">
       <h2 id="h-why-erg" class="sec__h2">Why We Recommend Effortless Rental Group</h2>
       <p class="sec__p">
-        Based on experience supporting short-term rental operations in the Denver market,
-        Effortless Rental Group stands out for combining revenue optimization, guest services,
-        and coordinated property operations into one structured management system.
+        Effortless Rental Group combines revenue optimization, guest services, and coordinated
+        property operations into one structured management system — purpose-built for the
+        Denver short-term rental market.
       </p>
-      <p class="sec__p">Their services typically include:</p>
       <ul class="flist">
         <li>Dynamic pricing and revenue optimization</li>
         <li>Listing management across Airbnb, Vrbo, and major booking platforms</li>
         <li>Professional guest communication and support</li>
         <li>Turnover coordination and cleaning management</li>
         <li>Maintenance oversight and property operations</li>
-        <li>Reporting and performance insights for property owners</li>
+        <li>Owner reporting and performance insights</li>
       </ul>
-      <p class="sec__p">
-        This integrated approach helps vacation rental owners operate their properties more
-        efficiently while maintaining high guest satisfaction.
-      </p>
       <div>
         <a
           class="btn"
@@ -590,73 +577,63 @@ ul  { list-style: none; }
     </div>
   </section>
 
-  <!-- WHY PROFESSIONAL MANAGEMENT -->
-  <section id="why-management" class="sec sec--light" aria-labelledby="h-why-mgmt">
+  <!-- IS THIS THE RIGHT FIT? -->
+  <section id="is-it-right" class="sec sec--light" aria-labelledby="h-right">
     <div class="wrap sec__inner">
-      <h2 id="h-why-mgmt" class="sec__h2">
-        Why Property Owners Choose Professional STR Management
-      </h2>
-      <p class="sec__p">
-        Managing a successful short-term rental involves more than listing a property online.
-        Pricing strategy, guest communication, cleaning coordination, and property readiness
-        all impact occupancy and guest reviews.
-      </p>
-      <p class="sec__p">Professional management helps owners:</p>
+      <h2 id="h-right" class="sec__h2">Is This the Right Fit for Your Property?</h2>
+      <p class="sec__p">Effortless Rental Group works with Denver-area property owners who:</p>
       <ul class="flist">
-        <li>Optimize nightly pricing and revenue</li>
-        <li>Maintain consistent guest communication</li>
-        <li>Coordinate cleaning and turnovers between stays</li>
-        <li>Manage maintenance and property logistics</li>
-        <li>Maintain strong reviews and guest experiences</li>
+        <li>Own a short-term rental and want to increase revenue</li>
+        <li>Are currently self-managing and ready to hand off operations</li>
+        <li>Want a professional team handling guests, turnovers, and maintenance</li>
+        <li>Are new to short-term rentals and need a full management system</li>
       </ul>
-      <p class="sec__p">
-        Many property owners choose professional management to improve performance while
-        reducing the day-to-day responsibilities of hosting.
-      </p>
+      <div>
+        <a
+          class="btn"
+          href="https://effortlessrentalgroup.com/?ref=highline&utm_source=highline&utm_medium=referral&utm_campaign=highline_referral"
+          target="_blank"
+          rel="noopener noreferrer"
+          onclick="trackReferralClick('is_it_right_cta')"
+        >See If Your Property Qualifies</a>
+      </div>
     </div>
   </section>
 
-  <!-- IS PROFESSIONAL STR MANAGEMENT RIGHT FOR YOU? -->
-  <section id="is-it-right" class="sec sec--light" aria-labelledby="h-right">
+  <!-- WHAT PROFESSIONAL MANAGEMENT DOES -->
+  <section id="why-management" class="sec sec--muted" aria-labelledby="h-why-mgmt">
     <div class="wrap sec__inner">
-      <h2 id="h-right" class="sec__h2">Is Professional STR Management Right for You?</h2>
-      <p class="sec__p">Effortless Rental Group typically works with property owners who:</p>
-      <ul class="flist">
-        <li>Own a short-term rental property in the Denver area</li>
-        <li>Want to improve occupancy and nightly revenue</li>
-        <li>Prefer a professional team managing guest communication</li>
-        <li>Want reliable systems for turnovers, maintenance, and property readiness</li>
-      </ul>
+      <h2 id="h-why-mgmt" class="sec__h2">
+        What Professional STR Management Actually Does
+      </h2>
       <p class="sec__p">
-        If that sounds like what you're looking for, their team can review your property and
-        explain how professional management could support your goals.
+        Revenue on a short-term rental is highly sensitive to how the property is managed —
+        not just listed. Occupancy, guest reviews, and nightly rate all depend on execution
+        behind the scenes.
       </p>
+      <ul class="flist">
+        <li>Nightly rates adjusted in real time based on market demand</li>
+        <li>Guest inquiries answered promptly to protect response metrics</li>
+        <li>Turnover and cleaning scheduled automatically between stays</li>
+        <li>Maintenance issues flagged and resolved without owner involvement</li>
+        <li>Review performance monitored to maintain platform ranking</li>
+      </ul>
     </div>
   </section>
 
   <!-- AIRBNB MANAGEMENT IN DENVER -->
-  <section id="airbnb" class="sec sec--muted" aria-labelledby="h-airbnb">
+  <section id="airbnb" class="sec sec--light" aria-labelledby="h-airbnb">
     <div class="wrap sec__inner">
       <h2 id="h-airbnb" class="sec__h2">Airbnb Management in Denver</h2>
       <p class="sec__p">
-        Many Denver property owners list their homes on platforms such as Airbnb and Vrbo to
-        generate short-term rental income.
+        Denver's short-term rental market is competitive. Properties listed on Airbnb and
+        Vrbo need active pricing, strong guest communication, and consistent turnover
+        operations to perform at the top of search results.
       </p>
       <p class="sec__p">
-        Managing these listings successfully requires consistent pricing adjustments, guest
-        communication, cleaning coordination, and operational oversight between stays.
-      </p>
-      <p class="sec__p">Professional Airbnb management helps owners:</p>
-      <ul class="flist">
-        <li>Optimize listing visibility on booking platforms</li>
-        <li>Adjust pricing dynamically based on demand</li>
-        <li>Maintain fast guest response times</li>
-        <li>Coordinate turnovers and property readiness</li>
-      </ul>
-      <p class="sec__p">
-        Effortless Rental Group supports vacation rental owners across the Denver area by
-        managing Airbnb listings and coordinating the operational systems that keep properties
-        performing at their best.
+        Effortless Rental Group manages Denver Airbnb listings end-to-end — from pricing
+        strategy and guest messaging to cleaning coordination and performance reporting — so
+        owners generate more revenue without managing day-to-day operations.
       </p>
     </div>
   </section>
@@ -665,11 +642,10 @@ ul  { list-style: none; }
   <section class="cta-band" aria-label="Connect with Effortless Rental Group">
     <div class="cta-band__veil" aria-hidden="true"></div>
     <div class="wrap cta-band__inner">
-      <h2 class="cta-band__h2">Explore Your Property's Revenue Potential</h2>
+      <h2 class="cta-band__h2">Find Out What Your Property Could Earn</h2>
       <p class="cta-band__p">
-        If you're considering short-term rental management in Denver, you can connect
-        directly with the Effortless Rental Group team to learn more about their approach
-        to revenue management and property operations.
+        Connect with Effortless Rental Group to get a revenue estimate for your Denver
+        property and learn how professional management could improve your returns.
       </p>
       <a
         class="btn"
@@ -677,7 +653,7 @@ ul  { list-style: none; }
         target="_blank"
         rel="noopener noreferrer"
         onclick="trackReferralClick('bottom_cta_section')"
-      >See What Your Property Could Earn</a>
+      >Get a Free Revenue Analysis</a>
     </div>
   </section>
 
@@ -689,22 +665,31 @@ ul  { list-style: none; }
         <div class="faq__item">
           <dt class="faq__q">Is Highline Denver still operating?</dt>
           <dd class="faq__a">
-            Highline Denver is no longer operating as a short-term rental management company.
+            No. Highline Denver is no longer operating as a short-term rental management
+            company as of 2026.
           </dd>
         </div>
         <div class="faq__item">
-          <dt class="faq__q">Who should property owners contact for management services?</dt>
+          <dt class="faq__q">Who should I contact for STR management in Denver?</dt>
           <dd class="faq__a">
-            Property owners seeking professional short-term rental management can contact
-            Effortless Rental Group, an independent company serving the Denver area.
+            We recommend <a class="faq__link" href="https://effortlessrentalgroup.com/?ref=highline&utm_source=highline&utm_medium=referral&utm_campaign=highline_referral" target="_blank" rel="noopener noreferrer" onclick="trackReferralClick('faq_link_1')">Effortless Rental Group</a>,
+            an independent management company serving the Denver area.
           </dd>
         </div>
         <div class="faq__item">
           <dt class="faq__q">What services does Effortless Rental Group provide?</dt>
           <dd class="faq__a">
-            Effortless Rental Group provides vacation rental management services including
-            revenue optimization, listing management across major booking platforms,
-            guest communication, and coordinated property operations.
+            Full-service vacation rental management — including revenue optimization,
+            listing management across Airbnb and Vrbo, guest communication,
+            turnover coordination, and owner reporting.
+          </dd>
+        </div>
+        <div class="faq__item">
+          <dt class="faq__q">How do I get started with Effortless Rental Group?</dt>
+          <dd class="faq__a">
+            You can <a class="faq__link" href="https://effortlessrentalgroup.com/?ref=highline&utm_source=highline&utm_medium=referral&utm_campaign=highline_referral" target="_blank" rel="noopener noreferrer" onclick="trackReferralClick('faq_link_2')">contact them directly here</a>
+            to request a free property revenue analysis and learn how they approach
+            management in the Denver market.
           </dd>
         </div>
       </dl>
@@ -753,7 +738,7 @@ ul  { list-style: none; }
     target="_blank"
     rel="noopener noreferrer"
     onclick="trackReferralClick('sticky_mobile_cta')"
-  >Get a Free Revenue Analysis</a>
+  >Connect with Effortless Rental Group</a>
 </div>
 
 </body>
