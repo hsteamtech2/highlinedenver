@@ -58,7 +58,7 @@ export default function LandingPage() {
 
           <div className="hero-left">
             <h1 className="hero-h1">
-              Denver Short-Term<br />
+              Denver Short&#x2011;Term<br />
               Rental Management
             </h1>
             <p className="hero-sub">
@@ -75,7 +75,7 @@ export default function LandingPage() {
 
           <div className="hero-right">
             <div className="hero-cta-card">
-              <p className="hero-card-eyebrow">Now accepting Denver property owners</p>
+              <p className="hero-card-eyebrow">Now accepting owners</p>
               <p className="hero-card-body">Get matched with a trusted local STR manager for a free, no-obligation revenue estimate on your property.</p>
               <CTAButton
                 label="Get a Free Revenue Estimate →"

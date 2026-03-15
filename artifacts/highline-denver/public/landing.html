@@ -190,13 +190,14 @@ ul  { list-style: none; }
 @media (min-width: 64rem) {
   .hero__body {
     display: grid;
-    grid-template-columns: 1fr 360px;
-    gap: 3rem;
+    grid-template-columns: minmax(0, 1fr) 290px;
+    gap: 2rem;
     max-width: 1280px;
     margin-inline: auto;
-    align-items: center;
-    padding: 3.5rem var(--px) 4rem;
+    align-items: start;
+    padding: 2.5rem 2rem 4rem;
   }
+  .hero__left .hero__h1 { font-size: clamp(2rem, 2.4vw, 2.6rem) !important; }
   .hero__right { display: block; }
   .hero__left .hero__cta--mobile { display: none !important; }
 }
@@ -579,7 +580,6 @@ ul  { list-style: none; }
 ════════════════════════════════════════════ */
 @media (min-width: 90rem) {
   :root { --px: 3rem; --py: 5rem; }
-  .hero__h1   { font-size: clamp(3rem, 4vw, 4.5rem); }
 }
 
 /* ════════════════════════════════════════════
@@ -616,7 +616,7 @@ ul  { list-style: none; }
 
     <div class="hero__left">
       <h1 class="hero__h1">
-        Denver Short-Term<br>
+        Denver Short&#x2011;Term<br>
         Rental Management
       </h1>
       <p class="hero__sub">Now connecting property owners with <strong>Effortless Rental Group</strong>.</p>
@@ -632,7 +632,7 @@ ul  { list-style: none; }
 
     <div class="hero__right">
       <div class="hero__cta-card">
-        <p class="hero__card-eyebrow">Now accepting Denver property owners</p>
+        <p class="hero__card-eyebrow">Now accepting owners</p>
         <p class="hero__card-body">Get matched with a trusted local STR manager for a free, no-obligation revenue estimate on your property.</p>
         <a
           class="btn hero__cta"
