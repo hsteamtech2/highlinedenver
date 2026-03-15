@@ -139,29 +139,12 @@ export default function LandingPage() {
               professional management allows owners to improve performance while
               simplifying the operational side of hosting.
             </p>
-          </div>
-        </section>
-
-        {/* ── IS IT RIGHT ── */}
-        <section id="is-it-right" className="section section-light">
-          <div className="container section-inner">
-            <h2 className="section-h2">
-              Is Professional STR Management Right for You?
-            </h2>
-            <p className="section-body">
-              Effortless Rental Group typically works with property owners who:
-            </p>
-            <ul className="feature-list">
-              <li>Own a short-term rental property in the Denver market</li>
-              <li>Want to improve occupancy and nightly revenue</li>
-              <li>Prefer a professional team handling guest communication</li>
-              <li>Want reliable systems for turnovers, maintenance, and property readiness</li>
-            </ul>
-            <p className="section-body">
-              If that sounds like what you're looking for, the Effortless
-              Rental Group team can review your property and explain how
-              professional management could support your goals.
-            </p>
+            <div className="cta-row">
+              <CTAButton
+                label="See What Effortless Rental Group Can Do"
+                trackLabel="why_mgmt_cta"
+              />
+            </div>
           </div>
         </section>
 
@@ -170,15 +153,14 @@ export default function LandingPage() {
           <div className="cta-section-overlay" aria-hidden="true" />
           <div className="container cta-section-inner">
             <h2 className="cta-section-h2">
-              Find Out What Your Property Could Earn
+              Get a Free Revenue Estimate for Your Denver Property
             </h2>
             <p className="cta-section-body">
-              Connect with Effortless Rental Group to get a revenue estimate
-              for your Denver property and learn how professional management
-              could improve your returns.
+              Effortless Rental Group reviews Denver short-term rentals and
+              provides a free revenue analysis — no commitment required.
             </p>
             <CTAButton
-              label="Get a Free Revenue Analysis"
+              label="Request a Free Revenue Analysis"
               className="cta-section-btn"
               trackLabel="bottom_cta_section"
             />
