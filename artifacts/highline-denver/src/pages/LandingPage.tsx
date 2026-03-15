@@ -253,7 +253,7 @@ export default function LandingPage() {
             <span className="logo-l">L</span>
           </div>
           <div className="footer-copy">
-            <p className="footer-name">Highline Denver</p>
+            <p className="footer-name">Highline Management</p>
             <p className="footer-tagline">Former short-term rental operations provider.</p>
             <p className="footer-disclaimer">
               Highline Management is no longer operating. Property owners can
