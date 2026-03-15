@@ -54,9 +54,8 @@ export default function LandingPage() {
             <span className="hero-logo-name">Highline Management</span>
           </div>
           <h1 className="hero-h1">
-            Short-Term Rental<br />
-            Property Management<br />
-            in Denver
+            Denver Short-Term<br />
+            Rental Management
           </h1>
           <p className="hero-sub">
             Now connecting property owners with{" "}

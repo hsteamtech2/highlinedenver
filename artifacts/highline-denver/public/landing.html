@@ -181,7 +181,7 @@ ul  { list-style: none; }
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5rem var(--px) 4.5rem;
+  padding: 3rem var(--px) 3.5rem;
 }
 
 .hero__logo {
@@ -189,6 +189,7 @@ ul  { list-style: none; }
   align-items: center;
   gap: .75rem;
   margin-bottom: 1.75rem;
+  align-self: center;
 }
 .hero__logo-img {
   height: 52px;
@@ -208,13 +209,15 @@ ul  { list-style: none; }
 
 .hero__h1 {
   font-family: var(--font-d);
-  font-size: clamp(3rem, 12vw, 5.5rem);
+  font-size: clamp(2.8rem, 7vw, 4.5rem);
   font-weight: 700;
-  line-height: 1.0;
+  line-height: 1.05;
   letter-spacing: -.02em;
   text-transform: uppercase;
   margin-bottom: 1.25rem;
   text-shadow: 0 2px 28px rgba(0,0,0,.55);
+  hyphens: none;
+  overflow-wrap: normal;
 }
 
 .hero__sub {
@@ -506,7 +509,6 @@ ul  { list-style: none; }
 ════════════════════════════════════════════ */
 @media (min-width: 56.25rem) {
   :root { --py: 4.5rem; --px: 2.5rem; }
-  .hero__h1 { font-size: clamp(4rem, 8vw, 5.5rem); }
   .hero__body { max-width: 720px; }
   .sec__inner { gap: 1.4rem; }
   .cta-band   { padding: 4.5rem 0; }
@@ -517,7 +519,7 @@ ul  { list-style: none; }
 ════════════════════════════════════════════ */
 @media (min-width: 90rem) {
   :root { --px: 3rem; --py: 5rem; }
-  .hero__h1   { font-size: clamp(6rem, 5.5vw, 9rem); }
+  .hero__h1   { font-size: clamp(3rem, 5vw, 5rem); }
   .hero__body {
     max-width: 1000px;
     padding-left: max(3rem, calc((100vw - 1200px) / 2 + 3rem));
@@ -553,11 +555,8 @@ ul  { list-style: none; }
       <span class="hero__logo-name">Highline Management</span>
     </div>
     <h1 class="hero__h1">
-      Short-Term<br>
-      Rental<br>
-      Property<br>
-      Management<br>
-      in Denver
+      Denver Short-Term<br>
+      Rental Management
     </h1>
     <p class="hero__sub">Now connecting property owners with <strong>Effortless Rental Group</strong>.</p>
     <p class="hero__trust">Our clients are in good hands.</p>
