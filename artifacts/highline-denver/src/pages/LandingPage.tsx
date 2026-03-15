@@ -107,66 +107,60 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* ── IS IT RIGHT ── */}
-        <section id="is-it-right" className="section section-light">
-          <div className="container section-inner">
-            <h2 className="section-h2">
-              Is This the Right Fit for Your Property?
-            </h2>
-            <p className="section-body">
-              Effortless Rental Group works with Denver-area property owners who:
-            </p>
-            <ul className="feature-list">
-              <li>Own a short-term rental and want to increase revenue</li>
-              <li>Are currently self-managing and ready to hand off operations</li>
-              <li>Want a professional team handling guests, turnovers, and maintenance</li>
-              <li>Are new to short-term rentals and need a full management system</li>
-            </ul>
-            <div className="cta-row">
-              <CTAButton
-                label="See If Your Property Qualifies"
-                trackLabel="is_it_right_cta"
-              />
-            </div>
-          </div>
-        </section>
-
         {/* ── WHY PROFESSIONAL MANAGEMENT ── */}
         <section id="why-management" className="section section-muted">
           <div className="container section-inner">
             <h2 className="section-h2">
-              What Professional STR Management Actually Does
+              Why Many Property Owners Choose Professional STR Management
             </h2>
             <p className="section-body">
-              Revenue on a short-term rental is highly sensitive to how the
-              property is managed — not just listed. Occupancy, guest reviews,
-              and nightly rate all depend on execution behind the scenes.
+              Managing a successful short-term rental involves far more than
+              listing a property online. Pricing strategy, guest communication,
+              cleaning coordination, and maintaining property readiness between
+              stays all influence occupancy rates, guest reviews, and overall
+              revenue performance.
+            </p>
+            <p className="section-body">
+              Professional management helps property owners maintain high
+              standards while reducing the day-to-day demands of hosting.
+            </p>
+            <p className="section-body">
+              Effortless Rental Group supports property owners by helping them:
             </p>
             <ul className="feature-list">
-              <li>Nightly rates adjusted in real time based on market demand</li>
-              <li>Guest inquiries answered promptly to protect response metrics</li>
-              <li>Turnover and cleaning scheduled automatically between stays</li>
-              <li>Maintenance issues flagged and resolved without owner involvement</li>
-              <li>Review performance monitored to maintain platform ranking</li>
+              <li>Optimize nightly pricing and revenue through data-driven pricing strategies</li>
+              <li>Maintain consistent guest communication before, during, and after each stay</li>
+              <li>Coordinate cleaning and turnovers between reservations</li>
+              <li>Manage maintenance needs and property logistics</li>
+              <li>Maintain strong guest reviews and positive guest experiences</li>
             </ul>
+            <p className="section-body">
+              By combining revenue strategy with coordinated property operations,
+              professional management allows owners to improve performance while
+              simplifying the operational side of hosting.
+            </p>
           </div>
         </section>
 
-        {/* ── AIRBNB / SEO SECTION ── */}
-        <section id="airbnb" className="section section-light">
+        {/* ── IS IT RIGHT ── */}
+        <section id="is-it-right" className="section section-light">
           <div className="container section-inner">
-            <h2 className="section-h2">Airbnb Management in Denver</h2>
+            <h2 className="section-h2">
+              Is Professional STR Management Right for You?
+            </h2>
             <p className="section-body">
-              Denver's short-term rental market is competitive. Properties
-              listed on Airbnb and Vrbo need active pricing, strong guest
-              communication, and consistent turnover operations to perform at
-              the top of search results.
+              Effortless Rental Group typically works with property owners who:
             </p>
+            <ul className="feature-list">
+              <li>Own a short-term rental property in the Denver market</li>
+              <li>Want to improve occupancy and nightly revenue</li>
+              <li>Prefer a professional team handling guest communication</li>
+              <li>Want reliable systems for turnovers, maintenance, and property readiness</li>
+            </ul>
             <p className="section-body">
-              Effortless Rental Group manages Denver Airbnb listings
-              end-to-end — from pricing strategy and guest messaging to
-              cleaning coordination and performance reporting — so owners
-              generate more revenue without managing day-to-day operations.
+              If that sounds like what you're looking for, the Effortless
+              Rental Group team can review your property and explain how
+              professional management could support your goals.
             </p>
           </div>
         </section>
