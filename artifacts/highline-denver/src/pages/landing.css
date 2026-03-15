@@ -224,6 +224,10 @@ ul {
   color: rgba(255, 255, 255, 0.88);
 }
 
+.notice-text + .notice-text {
+  margin-top: 0.6rem;
+}
+
 .notice-cta {
   align-self: flex-start;
 }

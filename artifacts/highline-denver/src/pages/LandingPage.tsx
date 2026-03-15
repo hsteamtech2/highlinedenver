@@ -62,12 +62,17 @@ export default function LandingPage() {
             <div className="notice-icon" aria-hidden="true">ℹ</div>
             <div className="notice-body">
               <p className="notice-text">
-                <strong>Highline Management is no longer operating.</strong>{" "}
-                As of 2026, Highline has ceased operations. Property owners
-                seeking professional short-term rental management in the Denver
-                area can connect with{" "}
-                <strong>Effortless Rental Group</strong> — the provider we
-                recommend for local vacation rental management.
+                Highline Management previously supported short-term rentals and
+                vacation rental operations in the Denver area. As of 2026,
+                Highline Management is no longer operating.
+              </p>
+              <p className="notice-text">
+                Property owners seeking professional short-term rental management
+                can connect with{" "}
+                <strong>Effortless Rental Group</strong> — a trusted provider
+                for vacation rental management and coordinated property
+                maintenance and turnover operations serving Denver and colorado
+                markets.
               </p>
               <CTAButton
                 label="Connect with Effortless Rental Group →"
