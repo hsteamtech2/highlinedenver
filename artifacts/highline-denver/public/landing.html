@@ -543,12 +543,8 @@ ul  { list-style: none; }
   border-top: 1px solid rgba(255,255,255,.08);
 }
 .footer__inner {
-  display: flex;
-  flex-direction: column;
-  gap: 1.35rem;
+  display: block;
 }
-.footer .logo__h,
-.footer .logo__l { opacity: .65; }
 .footer__name {
   font-family: var(--font-d);
   font-size: 1rem;
@@ -851,10 +847,6 @@ ul  { list-style: none; }
 ════════════════════════════════════════════ -->
 <footer class="footer">
   <div class="wrap footer__inner">
-    <div class="footer__logo logo" aria-label="Highline Denver">
-      <span class="logo__h">H</span><span class="logo__l">L</span>
-    </div>
-    <div>
       <p class="footer__name">Highline Management</p>
       <p class="footer__tag">Former short-term rental operations provider.</p>
       <p class="footer__note">Highline Management is no longer operating as a business.</p>
@@ -872,7 +864,6 @@ ul  { list-style: none; }
       <p class="footer__note footer__legal">
         Effortless Rental Group is not owned or operated by Highline Denver.
       </p>
-    </div>
   </div>
 </footer>
 

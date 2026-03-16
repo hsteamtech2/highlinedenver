@@ -274,11 +274,6 @@ export default function LandingPage() {
       {/* ── FOOTER ── */}
       <footer className="site-footer">
         <div className="container footer-inner">
-          <div className="footer-logo-mark">
-            <span className="logo-h">H</span>
-            <span className="logo-l">L</span>
-          </div>
-          <div className="footer-copy">
             <p className="footer-name">Highline Management</p>
             <p className="footer-tagline">Former short-term rental operations provider.</p>
             <p className="footer-disclaimer">
@@ -298,7 +293,6 @@ export default function LandingPage() {
             <p className="footer-disclaimer footer-legal">
               Effortless Rental Group is not owned or operated by Highline Denver.
             </p>
-          </div>
         </div>
       </footer>
 
