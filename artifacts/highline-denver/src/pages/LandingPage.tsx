@@ -39,7 +39,7 @@ function CTAButton({
 export default function LandingPage() {
   useEffect(() => {
     document.title =
-      "Denver Short-Term Rental Property Management | Highline Denver";
+      "Denver Short-Term Rental Property Management | Highline Management";
   }, []);
 
   return (
@@ -217,9 +217,9 @@ export default function LandingPage() {
             <h2 className="section-h2">Frequently Asked Questions</h2>
             <dl className="faq-list">
               <div className="faq-item">
-                <dt className="faq-q">Is Highline Denver still operating?</dt>
+                <dt className="faq-q">Is Highline Management still operating?</dt>
                 <dd className="faq-a">
-                  No. Highline Denver is no longer operating as a short-term
+                  No. Highline Management is no longer operating as a short-term
                   rental management company as of 2026.
                 </dd>
               </div>
@@ -236,7 +236,7 @@ export default function LandingPage() {
                   >
                     Effortless Rental Group
                   </a>
-                  , an independent management company serving the Denver area.
+                  , an independent management company serving Denver, Colorado Foothills, Mountain Towns, and surrounding Colorado markets.
                 </dd>
               </div>
               <div className="faq-item">
@@ -288,10 +288,10 @@ export default function LandingPage() {
               >
                 Effortless Rental Group
               </a>
-              , an independent company serving the Denver area.
+              , an independent company serving Denver, Colorado Foothills, Mountain Towns, and surrounding Colorado markets.
             </p>
             <p className="footer-disclaimer footer-legal">
-              Effortless Rental Group is not owned or operated by Highline Denver.
+              Effortless Rental Group is not owned or operated by Highline Management.
             </p>
         </div>
       </footer>
