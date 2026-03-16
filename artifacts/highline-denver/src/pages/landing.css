@@ -257,6 +257,13 @@ ul {
   font-size: 0.85rem;
   letter-spacing: 0.05em;
 }
+.hero-half-star {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--hl-gold) 50%, rgba(255, 255, 255, 0.25) 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 .hero-platforms {
   display: flex;
   flex-wrap: wrap;

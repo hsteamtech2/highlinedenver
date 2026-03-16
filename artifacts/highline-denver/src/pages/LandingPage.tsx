@@ -68,7 +68,7 @@ export default function LandingPage() {
               operations available.
             </p>
             <p className="hero-trust">
-              <span className="hero-trust-stars" aria-hidden="true">★★★★★</span>{" "}
+              <span className="hero-trust-stars" aria-label="4.5 out of 5 stars">★★★★<span className="hero-half-star">★</span></span>{" "}
               Trusted by 300+ Colorado property owners
             </p>
             <div className="hero-platforms" aria-label="Platforms managed">

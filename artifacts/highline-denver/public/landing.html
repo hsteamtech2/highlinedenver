@@ -302,6 +302,13 @@ ul  { list-style: none; }
   gap: .45rem;
 }
 .hero__trust-stars { color: var(--gold); font-size: .85rem; letter-spacing: .05em; }
+.hero__half-star {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--gold) 50%, rgba(255,255,255,.25) 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 .hero__platforms {
   display: flex;
   flex-wrap: wrap;
@@ -648,7 +655,7 @@ ul  { list-style: none; }
         in Denver &amp; Beyond
       </h1>
       <p class="hero__sub">Now connecting property owners with our trusted provider, <strong>Effortless Rental Group</strong>. Full service STR management and à la carte property maintenance and turnover operations available.</p>
-      <p class="hero__trust"><span class="hero__trust-stars" aria-hidden="true">★★★★★</span> Trusted by 300+ Colorado property owners</p>
+      <p class="hero__trust"><span class="hero__trust-stars" aria-label="4.5 out of 5 stars">★★★★<span class="hero__half-star">★</span></span> Trusted by 300+ Colorado property owners</p>
       <div class="hero__platforms" aria-label="Platforms managed">
         <span class="hero__platform-chip">✓ Airbnb</span>
         <span class="hero__platform-chip">✓ Vrbo</span>
