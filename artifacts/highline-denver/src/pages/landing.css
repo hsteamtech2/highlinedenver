@@ -266,6 +266,7 @@ ul {
   color: var(--hl-gold);
   font-size: 0.85rem;
   letter-spacing: 0.05em;
+  white-space: nowrap;
 }
 .hero-half-star {
   display: inline-block;
