@@ -141,7 +141,7 @@ export default function LandingPage() {
             </ul>
             <div className="cta-row">
               <CTAButton
-                label="Get a Free Property Revenue Analysis"
+                label="Get a Free Revenue Analysis →"
                 trackLabel="why_erg_cta"
               />
             </div>
@@ -182,7 +182,7 @@ export default function LandingPage() {
             </p>
             <div className="cta-row">
               <CTAButton
-                label="See What Effortless Rental Group Can Do"
+                label="See What ERG Can Do →"
                 trackLabel="why_mgmt_cta"
               />
             </div>

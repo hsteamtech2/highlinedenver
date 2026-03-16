@@ -303,7 +303,9 @@ ul {
   min-height: 52px;
   line-height: 1.2;
   box-shadow: 0 4px 18px rgba(201, 169, 110, 0.3);
-  white-space: nowrap;
+  white-space: normal;
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 
 .cta-btn:hover {
