@@ -187,10 +187,10 @@ ul  { list-style: none; }
 .hero__cta--mobile { display: inline-flex; }
 
 /* desktop two-column hero */
-@media (min-width: 60rem) {
+@media (min-width: 64rem) {
   .hero__body {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 300px;
+    grid-template-columns: minmax(0, 1fr) 380px;
     gap: 2.5rem;
     max-width: 1280px !important;
     margin-inline: auto;
@@ -206,12 +206,6 @@ ul  { list-style: none; }
   }
   .hero__right { display: block; }
   .hero__left .hero__cta--mobile { display: none !important; }
-}
-/* wider card at true desktop widths */
-@media (min-width: 72rem) {
-  .hero__body {
-    grid-template-columns: minmax(0, 1fr) 380px;
-  }
 }
 
 /* CTA card */
