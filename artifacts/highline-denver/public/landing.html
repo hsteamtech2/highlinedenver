@@ -186,11 +186,11 @@ ul  { list-style: none; }
 .hero__right { display: none; }
 .hero__cta--mobile { display: inline-flex; }
 
-/* desktop two-column hero — triggers at 56rem so canvas & maximized match */
-@media (min-width: 56rem) {
+/* desktop two-column hero */
+@media (min-width: 60rem) {
   .hero__body {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 320px;
+    grid-template-columns: minmax(0, 1fr) 300px;
     gap: 2.5rem;
     max-width: 1280px !important;
     margin-inline: auto;
@@ -201,7 +201,7 @@ ul  { list-style: none; }
     min-width: 0;
   }
   .hero__left .hero__h1 {
-    font-size: clamp(2.2rem, 3.5vw, 3.8rem) !important;
+    font-size: clamp(2rem, 3.2vw, 3.8rem) !important;
     overflow-wrap: break-word;
   }
   .hero__right { display: block; }
