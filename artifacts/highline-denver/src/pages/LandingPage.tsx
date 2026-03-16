@@ -63,11 +63,20 @@ export default function LandingPage() {
             </h1>
             <p className="hero-sub">
               Now connecting property owners with our trusted provider,{" "}
-              <strong>Effortless Rental Group</strong> for full service STR
-              management and a la carte property maintenance and turnover
-              operations.
+              <strong>Effortless Rental Group</strong>. Full service STR
+              management and à la carte property maintenance and turnover
+              operations available.
             </p>
-            <p className="hero-trust">Our clients are in good hands.</p>
+            <p className="hero-trust">
+              <span className="hero-trust-stars" aria-hidden="true">★★★★★</span>{" "}
+              Trusted by 300+ Colorado property owners
+            </p>
+            <div className="hero-platforms" aria-label="Platforms managed">
+              <span className="hero-platform-chip">✓ Airbnb</span>
+              <span className="hero-platform-chip">✓ Vrbo</span>
+              <span className="hero-platform-chip">✓ Booking.com</span>
+              <span className="hero-platform-chip">✓ Direct bookings</span>
+            </div>
             <CTAButton
               label="Connect with Effortless Rental Group →"
               className="hero-cta hero-cta--mobile"
@@ -78,7 +87,7 @@ export default function LandingPage() {
           <div className="hero-right">
             <div className="hero-cta-card">
               <p className="hero-card-eyebrow">Now accepting owners</p>
-              <p className="hero-card-body">Get matched with a trusted local STR manager for a free, no-obligation revenue estimate on your property.</p>
+              <p className="hero-card-body">Get matched with our trusted local STR management provider for a free, no-obligation property revenue analysis.</p>
               <CTAButton
                 label="Get a Free Revenue Estimate →"
                 className="hero-cta"
@@ -96,7 +105,7 @@ export default function LandingPage() {
         {/* ── STATUS + PRIMARY CTA ── */}
         <section className="notice-band" aria-label="Status notice">
           <div className="container notice-inner">
-            <div className="notice-icon" aria-hidden="true">ℹ</div>
+            <svg className="notice-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
             <div className="notice-body">
               <p className="notice-text">
                 As of 2026, Highline Management has ceased operations. For

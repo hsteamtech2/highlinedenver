@@ -150,8 +150,8 @@ ul  { list-style: none; }
   inset: 0;
   background: linear-gradient(
     160deg,
-    rgba(13,17,23,.90) 0%,
-    rgba(13,17,23,.68) 55%,
+    rgba(13,17,23,.82) 0%,
+    rgba(13,17,23,.55) 55%,
     rgba(13,17,23,.80) 100%
   );
   pointer-events: none;
@@ -190,7 +190,7 @@ ul  { list-style: none; }
 @media (min-width: 64rem) {
   .hero__body {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 320px;
+    grid-template-columns: minmax(0, 1fr) 380px;
     gap: 2.5rem;
     max-width: 1280px !important;
     margin-inline: auto;
@@ -261,9 +261,9 @@ ul  { list-style: none; }
 }
 .hero__logo-name {
   font-family: var(--font-d);
-  font-size: 1.15rem;
-  font-weight: 500;
-  letter-spacing: .14em;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: .2em;
   text-transform: uppercase;
   color: #fff;
   line-height: 1;
@@ -292,11 +292,32 @@ ul  { list-style: none; }
 }
 .hero__sub strong { font-weight: 600; color: var(--white); }
 .hero__trust {
-  font-size: .9rem;
-  font-style: italic;
-  color: rgba(255,255,255,.6);
-  letter-spacing: .04em;
+  font-size: .82rem;
+  font-style: normal;
+  color: rgba(255,255,255,.85);
+  letter-spacing: .03em;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: .45rem;
+}
+.hero__trust-stars { color: var(--gold); font-size: .85rem; letter-spacing: .05em; }
+.hero__platforms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
   margin-bottom: 2rem;
+}
+.hero__platform-chip {
+  font-size: .72rem;
+  font-family: var(--font-d);
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.72);
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 3px;
+  padding: .3rem .65rem;
 }
 .hero__cta { align-self: flex-start; }
 
@@ -347,9 +368,10 @@ ul  { list-style: none; }
 }
 .notice__icon {
   flex-shrink: 0;
-  font-size: 1rem;
+  width: 20px;
+  height: 20px;
   color: var(--navy);
-  margin-top: .2rem;
+  margin-top: .15rem;
 }
 .notice__text,
 .notice__body p { color: #1a1a2e !important; font-size: 1rem; line-height: 1.7; }
@@ -411,7 +433,7 @@ ul  { list-style: none; }
   position: relative;
 }
 .flist li::before {
-  content: '→';
+  content: '✓';
   position: absolute;
   left: 0;
   color: var(--gold);
@@ -625,8 +647,14 @@ ul  { list-style: none; }
         Short&#x2011;Term Rental Management<br>
         in Denver &amp; Beyond
       </h1>
-      <p class="hero__sub">Now connecting property owners with our trusted provider, <strong>Effortless Rental Group</strong> for full service STR management and a la carte property maintenance and turnover operations.</p>
-      <p class="hero__trust">Our clients are in good hands.</p>
+      <p class="hero__sub">Now connecting property owners with our trusted provider, <strong>Effortless Rental Group</strong>. Full service STR management and à la carte property maintenance and turnover operations available.</p>
+      <p class="hero__trust"><span class="hero__trust-stars" aria-hidden="true">★★★★★</span> Trusted by 300+ Colorado property owners</p>
+      <div class="hero__platforms" aria-label="Platforms managed">
+        <span class="hero__platform-chip">✓ Airbnb</span>
+        <span class="hero__platform-chip">✓ Vrbo</span>
+        <span class="hero__platform-chip">✓ Booking.com</span>
+        <span class="hero__platform-chip">✓ Direct bookings</span>
+      </div>
       <a
         class="btn hero__cta hero__cta--mobile"
         href="https://effortlessrentalgroup.com/?ref=highline&utm_source=highline&utm_medium=referral&utm_campaign=highline_referral"
@@ -639,7 +667,7 @@ ul  { list-style: none; }
     <div class="hero__right">
       <div class="hero__cta-card">
         <p class="hero__card-eyebrow">Now accepting owners</p>
-        <p class="hero__card-body">Get matched with a trusted local STR manager for a free, no-obligation revenue estimate on your property.</p>
+        <p class="hero__card-body">Get matched with our trusted local STR management provider for a free, no-obligation property revenue analysis.</p>
         <a
           class="btn hero__cta"
           href="https://effortlessrentalgroup.com/?ref=highline&utm_source=highline&utm_medium=referral&utm_campaign=highline_referral"
@@ -660,7 +688,7 @@ ul  { list-style: none; }
 ════════════════════════════════════════════ -->
 <div class="notice" role="status">
   <div class="wrap notice__inner">
-    <span class="notice__icon" aria-hidden="true">ℹ</span>
+    <svg class="notice__icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
     <div class="notice__body">
       <p class="notice__text">
         As of 2026, Highline Management has ceased operations. For continued STR and vacation rental management in the Denver or Colorado market, we refer property owners to <strong>Effortless Rental Group</strong> — a trusted provider for professional short-term rental management, property maintenance, and turnover coordination.
