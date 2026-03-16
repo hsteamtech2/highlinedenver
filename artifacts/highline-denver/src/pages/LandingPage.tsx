@@ -242,10 +242,7 @@ export default function LandingPage() {
               <div className="faq-item">
                 <dt className="faq-q">What services does Effortless Rental Group provide?</dt>
                 <dd className="faq-a">
-                  Effortless Rental Group provides full-service vacation rental
-                  management — including revenue optimization, listing
-                  management across Airbnb and Vrbo, guest communication,
-                  turnover coordination, and owner reporting.
+                  Effortless Rental Group provides full-service vacation rental management — including revenue optimization, listing management across Airbnb and Vrbo, guest communication, turnover coordination, property maintenance, and exterior and seasonal care.
                 </dd>
               </div>
               <div className="faq-item">
