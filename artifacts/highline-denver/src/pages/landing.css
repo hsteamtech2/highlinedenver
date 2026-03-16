@@ -124,26 +124,32 @@ ul {
 .hero-right { display: none; }
 .hero-cta--mobile { display: inline-flex; }
 
-/* Desktop two-column hero */
-@media (min-width: 64rem) {
+/* Desktop two-column hero — triggers at 56rem so canvas & maximized match */
+@media (min-width: 56rem) {
   .hero-content {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 320px;
     gap: 2.5rem;
     max-width: 1280px !important;
     margin-inline: auto;
-    align-items: start;
-    padding: 2.5rem 2rem 4rem;
+    align-items: center;
+    padding: 3rem 2rem;
   }
   .hero-left {
     min-width: 0;
   }
   .hero-left .hero-h1 {
-    font-size: clamp(3rem, 3.5vw, 3.8rem) !important;
+    font-size: clamp(2.2rem, 3.5vw, 3.8rem) !important;
     overflow-wrap: break-word;
   }
   .hero-right { display: block; }
   .hero-left .hero-cta--mobile { display: none !important; }
+}
+/* wider card at true desktop widths */
+@media (min-width: 72rem) {
+  .hero-content {
+    grid-template-columns: minmax(0, 1fr) 380px;
+  }
 }
 
 /* ── CTA CARD ── */
