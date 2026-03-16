@@ -1,6 +1,9 @@
 import { useEffect } from "react";
 
 const CTA_URL =
+  "https://effortlessrentalgroup.com/effortless-property-inquiry/?ref=highline&utm_source=highline&utm_medium=referral&utm_campaign=highline_referral";
+
+const ERG_HOME_URL =
   "https://effortlessrentalgroup.com/?ref=highline&utm_source=highline&utm_medium=referral&utm_campaign=highline_referral";
 
 function trackReferralClick(label: string) {
@@ -63,7 +66,7 @@ export default function LandingPage() {
             </h1>
             <p className="hero-sub">
               Now connecting property owners with our trusted provider,{" "}
-              <strong>Effortless Rental Group</strong>. Full service STR
+              <a href={ERG_HOME_URL} target="_blank" rel="noopener noreferrer" onClick={() => trackReferralClick("hero_erg_link")} className="erg-inline-link"><strong>Effortless Rental Group</strong></a>. Full service STR
               management and à la carte property maintenance and turnover
               operations available.
             </p>
@@ -111,7 +114,7 @@ export default function LandingPage() {
                 As of 2026, Highline Management has ceased operations. For
                 continued STR and vacation rental management in the Denver or
                 Colorado market, we refer property owners to{" "}
-                <strong>Effortless Rental Group</strong> — a trusted provider
+                <a href={ERG_HOME_URL} target="_blank" rel="noopener noreferrer" onClick={() => trackReferralClick("notice_erg_link")} className="erg-inline-link"><strong>Effortless Rental Group</strong></a> — a trusted provider
                 for professional short-term rental management, property
                 maintenance, and turnover coordination.
               </p>
@@ -225,7 +228,7 @@ export default function LandingPage() {
                 <dd className="faq-a">
                   We recommend{" "}
                   <a
-                    href={CTA_URL}
+                    href={ERG_HOME_URL}
                     className="faq-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -250,7 +253,7 @@ export default function LandingPage() {
                 <dd className="faq-a">
                   You can{" "}
                   <a
-                    href={CTA_URL}
+                    href={ERG_HOME_URL}
                     className="faq-link"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -282,7 +285,7 @@ export default function LandingPage() {
               Highline Management is no longer operating. Property owners can
               connect with{" "}
               <a
-                href={CTA_URL}
+                href={ERG_HOME_URL}
                 className="footer-link"
                 target="_blank"
                 rel="noopener noreferrer"

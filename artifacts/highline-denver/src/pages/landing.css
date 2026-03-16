@@ -242,6 +242,16 @@ ul {
   color: var(--hl-white);
 }
 
+.erg-inline-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(201, 169, 110, 0.55);
+  text-underline-offset: 3px;
+}
+.erg-inline-link:hover {
+  text-decoration-color: var(--hl-gold);
+}
+
 .hero-trust {
   font-size: 0.82rem;
   font-style: normal;
